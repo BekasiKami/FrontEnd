@@ -1,0 +1,164 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* left style */
+.left {
+  height: 100%;
+  width: 100%;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.left-wrapper .logo {
+  margin-bottom: 3.125rem;
+}
+
+.left-wrapper h1 {
+  color: rgba(69, 69, 69, 1);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.left-wrapper a:last-child {
+  color: var(--color-primary-red);
+}
+
+.form-login {
+  width: 500px;
+  border-bottom: 1px solid rgba(179, 179, 179, 1);
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.form-input input {
+  margin: 20px 0;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(196, 196, 196, 0.4);
+}
+
+.form-input .top-input-wrapper input {
+  width: 100%;
+  display: block;
+}
+
+.form-input input[placeholder] {
+  font-weight: bold;
+  color: rgba(69, 69, 69, 1);
+}
+
+.gender-wrapper {
+  padding: 0 1rem;
+}
+
+.gender-wrapper label {
+  margin-right: 30px;
+  padding-left: 5px;
+}
+
+.password-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: -20px !important;
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.btn-submit {
+  background-color: var(--color-primary-red);
+  border: 0;
+  color: #fff;
+  width: 500px;
+  padding: 0.8rem 0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* left style end */
+
+/* right style */
+
+.right {
+  background-color: var(--bg-color-red-grayish);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.right figure {
+  margin-top: 15rem;
+}
+
+.update-notice {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  text-align: right;
+}
+
+.update-notice h4 {
+  color: rgba(69, 69, 69, 1);
+  font-weight: 700;
+}
+
+.update-notice p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  margin: 10px 0 15px 0;
+}
+
+.update-notice a {
+  background-color: #fff;
+  color: var(--color-primary-red);
+  border-radius: 2px;
+  padding: 0.3rem 1rem;
+}
+
+/* right style end */
+
+/* media */
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column !important;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .left-wrapper > a,
+  .login-email-text,
+  .form-login,
+  .btn-submit {
+    width: 300px;
+  }
+
+  .login-email-text .line {
+    width: 50px;
+  }
+
+  .password-wrapper {
+    flex-direction: column;
+    margin: 10px 0 !important;
+  }
+
+  .password-wrapper input:last-child {
+    margin-top: -10px;
+  }
+}

@@ -1,0 +1,74 @@
+header .container {
+  position: relative;
+}
+
+header .container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+main .search-wrapper {
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+main .search {
+  border: 1px solid rgba(223, 84, 104, 0.5);
+  box-shadow: 0 4px 4px rgba(223, 84, 104, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+main .search input {
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+  width: 400px;
+}
+
+main .search-result {
+  padding: 0.8rem 1.5rem;
+  display: grid;
+  align-items: center;
+  justify-items: flex-start;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  border-top: 1px solid rgba(209, 209, 209, 0.8);
+  border-bottom: 1px solid rgba(209, 209, 209, 0.8);
+}
+
+main .profile-info {
+  margin-top: 2rem;
+}
+
+main .profile-info span {
+  color: rgba(179, 179, 179, 1);
+  font-size: 12px;
+}
+
+main .profile-name {
+  margin-bottom: 10px;
+  color: rgba(69, 69, 69, 1);
+  font-size: 12px;
+}
+
+main .btn-following {
+  background-color: var(--color-primary-red);
+  color: #fff;
+  border: 0;
+  padding: 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 3rem !important;
+  cursor: pointer;
+}

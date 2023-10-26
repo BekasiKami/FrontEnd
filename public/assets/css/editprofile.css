@@ -1,0 +1,130 @@
+header .container {
+  position: relative;
+}
+
+header .container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.edit-profile-wrapper {
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+.back-to-userprofile a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.back-to-userprofile span {
+  color: rgba(69, 69, 69, 1);
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.edit-profile {
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.edit-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr;
+  margin-bottom: 15px;
+}
+
+.edit-header img {
+  width: 100px;
+  height: 100px;
+}
+
+.edit-profile-description button {
+  color: rgba(101, 122, 213, 1);
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit-profile-description-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.edit-profile-description-top h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(69, 69, 69, 1);
+}
+
+.edit-profile-description-top button {
+  color: rgba(223, 84, 104, 1);
+  font-weight: 700;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+form label {
+  color: rgba(69, 69, 69, 1);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+form .form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+form .form-wrapper label {
+  flex: 1;
+  text-align: end;
+}
+
+form .form-wrapper input {
+  flex: 2;
+  padding: 0.4rem 0.3rem;
+  color: rgba(69, 69, 69, 1);
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid rgba(94, 94, 94, 0.7);
+  margin: 10px 0;
+}
+
+form .text-info {
+  color: rgba(94, 94, 94, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 9.7rem;
+}
+
+form .btn-submit {
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(223, 84, 104, 1);
+  border: 0;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

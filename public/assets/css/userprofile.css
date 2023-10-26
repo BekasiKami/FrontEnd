@@ -1,0 +1,79 @@
+header .container {
+  position: relative;
+}
+
+header .container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+main .profile-wrapper {
+  max-width: 500px;
+  margin: 5.2rem auto;
+}
+
+main .profile-information {
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr;
+}
+
+main .profile-information img {
+  width: 100px;
+  height: 100px;
+}
+
+main .profile-detail .full-name {
+  margin-bottom: 15px;
+  color: rgba(69, 69, 69, 1);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .profile-detail .description span {
+  margin-right: 15px;
+  font-size: 14px;
+  color: rgba(69, 69, 69, 1);
+
+  font-weight: 400;
+}
+
+main .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+main .profile-header .username {
+  color: rgba(69, 69, 69, 1);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+main .profile-header a {
+  color: rgba(69, 69, 69, 1);
+  font-weight: 700;
+  background-color: rgba(217, 217, 217, 0.7);
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+}
+
+main .post-divider {
+  border-bottom: 1px solid rgba(209, 209, 209, 0.8);
+  padding-bottom: 8px;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+main .user-post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+}

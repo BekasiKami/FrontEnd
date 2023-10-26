@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL CSS */
+
+:root {
+  --color-primary-red: rgba(223, 84, 104, 1);
+  --bg-color-red-grayish: rgba(223, 84, 104, 0.5);
+}
+*,
+::before,
+::after {
+  @apply box-border no-underline list-none m-0 p-0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+body,
+html {
+  @apply h-full;
+}
+img {
+  @apply object-cover max-w-full;
+}
+.container {
+  @apply max-w-[900px] mx-auto my-0;
+}
+header {
+  @apply mt-5;
+}
+
+/* toggle css */
+.option-menu {
+  @apply border w-[200px] absolute z-[100] hidden transition-all duration-[0.3s] rounded-[5px] border-solid border-[rgba(223,84,104,1)] right-0;
+}
+.option-menu a {
+  @apply text-[rgba(69,69,69,1)] font-bold text-base transition-all duration-[0.3s] p-[0.8rem] border-b-[black] border-b border-solid hover:text-[rgba(223,84,104,1)] hover:transition-all hover:duration-[0.3s];
+}
+.active {
+  @apply flex flex-col transition-all duration-[0.3s];
+}

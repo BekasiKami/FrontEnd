@@ -1,0 +1,159 @@
+header .container {
+  position: relative;
+}
+
+header .container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* header end */
+
+main .container {
+  position: relative !important;
+}
+
+.post-wrapper {
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+.post-text {
+  border: 1px solid rgba(223, 84, 104, 0.5);
+  box-shadow: 0 4px 4px rgba(223, 84, 104, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}
+
+.post-text form {
+  display: flex;
+  align-items: center;
+}
+
+.post-text form input {
+  font-weight: 400;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  width: 300px;
+  margin-right: 2rem;
+}
+
+.post-text form input[placeholder] {
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.post-text button {
+  border: 1px solid rgba(223, 84, 104, 1);
+  box-shadow: 0 0 4px rgba(223, 84, 104, 1);
+  padding: 0.3rem 0.8rem;
+  color: rgba(223, 84, 104, 1);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.posted {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  gap: 15px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 1.2rem 0;
+  margin: 15px 0;
+}
+
+.posted .left {
+  position: relative;
+}
+
+.posted .left-img-wrapper {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.posted .left .bottom-images {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.posted .left .bottom-images img {
+  width: 20px;
+  display: inline-block;
+  margin: -5px;
+}
+
+.posted .left .line {
+  width: 2px;
+  position: absolute;
+  top: 40px;
+  bottom: 19px;
+  left: 50%;
+
+  background-color: #000;
+}
+
+.posted-header {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.posted-header .username {
+  margin-right: auto;
+}
+
+.posted-header .post-time {
+  margin-right: 1rem;
+  color: rgba(69, 69, 69, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.posted-header button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.posted-buttons button {
+  background-color: transparent;
+  border: 0;
+  margin: 15px 5px;
+  cursor: pointer;
+}
+
+.posted-activities span {
+  color: rgba(69, 69, 69, 0.7);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+button.explore {
+  position: absolute;
+  right: 0%;
+  bottom: 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0.8rem 1.7rem;
+  color: rgba(223, 84, 104, 1);
+  border: 1px solid rgba(223, 84, 104, 1);
+}

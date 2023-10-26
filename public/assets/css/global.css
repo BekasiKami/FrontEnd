@@ -1,0 +1,70 @@
+:root {
+  --color-primary-red: rgba(223, 84, 104, 1);
+  --bg-color-red-grayish: rgba(223, 84, 104, 0.5);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 20px;
+}
+
+/* toggle css */
+
+.option-menu {
+  border: 1px solid rgba(223, 84, 104, 1);
+  width: 200px;
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  z-index: 100;
+  display: none;
+  transition: all 0.3s;
+}
+
+.option-menu a {
+  border-bottom: 1px solid black;
+  padding: 0.8rem 0.8rem;
+  color: rgba(69, 69, 69, 1);
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.option-menu a:hover {
+  color: rgba(223, 84, 104, 1);
+  transition: all 0.3s;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
