@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Message</title>
+    <title>{{ $title }}</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
 
-    <link rel="stylesheet" href="../css/message-list.css" />
+    <link rel="stylesheet" href="assets/css/message-list.css" />
   </head>
   <body>
     <header>

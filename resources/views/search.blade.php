@@ -1,163 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Search</title>
+    <title>{{ $title }}</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/global.css" />
-
-    <link rel="stylesheet" href="../css/search.css" />
+    {{-- <link rel="stylesheet" href="assets/css/global.css" /> --}}
+    {{-- <link rel="stylesheet" href="assets/css/search.css" /> --}}
+    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="homepage.html">
-            <img src="../assets/images/secondary-logo.svg" alt="" />
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="homepage.html">
-                  <img src="../assets/images/home-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="search.html">
-                  <img src="../assets/images/search-icon-active.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../assets/images/post-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="message-list.html">
-                  <img src="../assets/images/message-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="userprofile.html">
-                  <img src="../assets/images/user-icon.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-bar" id="menu-bar">
-            <img src="../assets/images/menu-bar.png" style="cursor: pointer" />
-          </div>
-        </div>
-        <div class="option-menu">
-          <a href="notification.html">Notification</a>
-          <a href="#">Setting</a>
-          <a href="#">About</a>
-          <a href="#">Report a problem</a>
-          <a href="#">Log out</a>
-        </div>
-      </div>
-    </header>
+    @include('partials.navbar');
 
     <main>
       <div class="container">
-        <div class="search-wrapper">
-          <div class="search">
-            <img src="../assets/images/search-icon-active.svg" alt="" />
+        <div class="search-wrapper max-w-[500px] mx-auto my-[5.2rem]">
+          <div class="search w-[500px] h-[57px] px-5 py-4 bg-neutral-200 rounded-[10px] justify-start items-center gap-5 inline-flex">
+            <img src="assets/images/search-icon-active.svg" alt="" />
             <form action="#">
-              <input type="text" placeholder="Search" />
+              <input class="bg-transparent w-[400px] ml-[20] py-2 border-0 outline-0 text-zinc-700 text-opacity-60 text-sm font-normal font-['Nunito']" type="text" placeholder="Search" />
             </form>
           </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
-            </div>
-            <button class="btn-following">Following</button>
+
+          <div class="w-[500px] h-[61px] p-5 justify-start items-center gap-2.5 inline-flex">
+            <div class="text-center text-zinc-700 text-sm font-bold font-['Nunito'] leading-[21px] tracking-wide">Riwayat Pencarian</div>
           </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+
+          <div class="w-[500px] h-[41px] py-2.5 justify-between items-center inline-flex">
+            <div class="px-5 justify-start items-center gap-2.5 flex">
+                <div class="text-center text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px]">Banjir susulan</div>
             </div>
-            <button class="btn-following">Following</button>
-          </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+            <div class="px-5 justify-end items-center gap-2.5 flex">
+              <img src="assets/images/close-icon.svg" alt="" />
             </div>
-            <button class="btn-following">Following</button>
           </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+
+          <div class="w-[500px] h-[41px] py-2.5 justify-between items-center inline-flex">
+            <div class="px-5 justify-start items-center gap-2.5 flex">
+                <div class="text-center text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px]">Kebakaran di kranji</div>
             </div>
-            <button class="btn-following">Following</button>
-          </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+            <div class="px-5 justify-end items-center gap-2.5 flex">
+              <img src="assets/images/close-icon.svg" alt="" />
             </div>
-            <button class="btn-following">Following</button>
           </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+
+          <div class="w-[500px] h-[41px] py-2.5 justify-between items-center inline-flex">
+            <div class="px-5 justify-start items-center gap-2.5 flex">
+                <div class="text-center text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px]">Badai hujan bekasi barat</div>
             </div>
-            <button class="btn-following">Following</button>
-          </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
+            <div class="px-5 justify-end items-center gap-2.5 flex">
+              <img src="assets/images/close-icon.svg" alt="" />
             </div>
-            <button class="btn-following">Following</button>
           </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
-            </div>
-            <button class="btn-following">Following</button>
-          </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
-            </div>
-            <button class="btn-following">Following</button>
-          </div>
-          <div class="search-result">
-            <img src="../assets/images/azurine.svg" alt="" />
-            <div class="profile-info">
-              <h5 class="profile-name">azurine_</h5>
-              <span>Red Hair Azure | </span>
-              <span>80 followers</span>
-            </div>
-            <button class="btn-following">Following</button>
-          </div>
+
         </div>
       </div>
     </main>

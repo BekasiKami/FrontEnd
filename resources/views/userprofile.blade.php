@@ -1,104 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>User profile</title>
+    <title>{{ $title }}</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="../css/global.css" />
-
-    <link rel="stylesheet" href="../css/userprofile.css" />
+    {{-- <link rel="stylesheet" href="assets/css/global.css" /> --}}
+    {{-- <link rel="stylesheet" href="assets/css/userprofile.css" /> --}}
+    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="homepage.html">
-            <img src="../assets/images/secondary-logo.svg" alt="" />
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="homepage.html">
-                  <img src="../assets/images/home-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="search.html">
-                  <img src="../assets/images/search-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../assets/images/post-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="message-list.html">
-                  <img src="../assets/images/message-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="userprofile.html">
-                  <img src="../assets/images/user-icon-active.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-bar" id="menu-bar">
-            <img src="../assets/images/menu-bar.png" style="cursor: pointer" />
-          </div>
-        </div>
-        <div class="option-menu">
-          <a href="notification.html">Notification</a>
-          <a href="#">Setting</a>
-          <a href="#">About</a>
-          <a href="#">Report a problem</a>
-          <a href="#">Log out</a>
-        </div>
-      </div>
-    </header>
+    @include('partials.navbar');
 
     <main>
       <div class="container">
-        <div class="profile-wrapper">
-          <div class="profile-information">
-            <img
-              src="../assets/images/jessica.svg"
-              alt=""
-              class="user-profile-image"
-            />
-            <div class="profile-detail">
-              <div class="profile-header">
-                <h4 class="username">Jessica_</h4>
-                <a href="editprofile.html" class="btn-edit-profile"
-                  >Edit profile</a
-                >
-              </div>
-              <p class="full-name">Jessica Cathy</p>
-              <div class="description">
-                <span>3 post</span>
-                <span>300 followers</span>
-                <span>30 Following</span>
-              </div>
+        <div class="profile-wrapper max-w-[440px] mx-auto my-[5.2rem]">
+          <div class="w-[439px] h-[140px] py-5 justify-center items-center gap-[25px] inline-flex">
+            <img class="w-[100px] h-[100px] rounded-full shadow" src="/assets/images/jessica.svg" />
+              <div class="flex-col justify-start items-start inline-flex">
+                  <div class="w-[314px] h-[75px] pb-2.5 flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch justify-between items-center inline-flex">
+                      <div class="text-black text-sm font-bold font-['Poppins'] leading-[21px]">Kevin86</div>
+                      <button class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-start items-center gap-2.5 flex">
+                        <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Edit profile</div>
+                      </button>
+                    </div>
+                    <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Kevin Sanjaya</div>
+                  </div>
+                <div class="w-[314px] justify-between items-center inline-flex">
+                    <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px]">6 Postingan</div>
+                    <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px]">3 Tersimpan</div>
+                </div>
             </div>
-          </div>
+        </div>
 
-          <div class="post-divider">
-            <h3>Post</h3>
-          </div>
+        <div class="w-[440px] h-[77px] p-5 justify-between items-center inline-flex">
+          <button class="px-4 py-2 rounded-[10px] shadow border border-emerald-500 justify-start items-center gap-2.5 flex">
+              <div class="text-emerald-500 text-xs font-normal font-['Poppins'] leading-[21px]">Postingan</div>
+          </button>
+          <button class="px-4 py-2 bg-emerald-500 rounded-[10px] shadow justify-start items-center gap-2.5 flex">
+              <div class="text-white text-xs font-normal font-['Poppins'] leading-[21px]">Tersimpan</div>
+          </button>
+      </div>
 
-          <div class="user-post">
-            <div class="post-1">
-              <img src="../assets/images/post-1.png" alt="" />
-            </div>
-            <div class="post-2">
-              <img src="../assets/images/post-2.png" alt="" />
-            </div>
-            <div class="post-3">
-              <img src="../assets/images/post-3.png" alt="" />
-            </div>
-          </div>
+      <div class="w-[440px] h-[0px] border-2 border-stone-900"></div>
+
+          <div class="w-[440px] h-[183px] py-5 justify-start items-start gap-[5px] inline-flex">
+            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-1.png" />
+            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-2.png" />
+            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-3.png" />
+        </div>
+
+          
         </div>
       </div>
     </main>
