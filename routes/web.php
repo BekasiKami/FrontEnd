@@ -18,8 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/homepage', function () {
-    return view('homepage', [
-        'title'=> 'Home',
+    return view('homepage',[
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/image-post1.svg",
