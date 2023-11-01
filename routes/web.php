@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/homepage', function () {
-    return view('homepage',[
+    return view('homepage', [
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/image-post1.svg",
@@ -28,4 +28,12 @@ Route::get('/homepage', function () {
 
 Route::get('/welcome', function () {
     return view('welcome');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('regis');
 });
