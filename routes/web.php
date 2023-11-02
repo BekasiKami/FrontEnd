@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
 
-Route::get('/homepage', function () {
-    return view('homepage', [
+Route::get('/home', function () {
+    return view('home', [
+        'title'=> 'Home ',
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/image-post1.svg",
@@ -43,8 +44,8 @@ Route::get("/message-list", function () {
     ]);
 });
 
-Route::get("/userprofile", function () {
-    return view("userprofile", [
+Route::get("/profile", function () {
+    return view("profile", [
         "title"=> "Profile",
     ]);
 });

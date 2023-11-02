@@ -9,8 +9,8 @@
 </head>
 <body>
   <div class="relative bg-white">
-      {{-- <img class="w-[538px] h-[538px] left-[-148px] top-[-94px] absolute" src="https://via.placeholder.com/538x538" />
-      <img class="w-[560px] h-[560px] left-[902px] top-[253px] absolute" src="https://via.placeholder.com/560x560" /> --}}
+      <img class="w-auto h-auto left-[-148px] top-[-94px] absolute" src="assets/images/bg-login1.png" />
+      <img class="w-auto h-auto left-[988px] top-[175px] absolute" src="assets/images/bg-login2.png" />
       <div class="flex min-h-full bg-gray-white rounded-[20px] flex-col justify-center items-center gap-5">
           <div class="px-2.5 justify-center items-center gap-2.5 inline-flex">
               <div class="text-stone-900 text-5xl font-bold">Bekasi Kami</div>
@@ -26,7 +26,9 @@
             <div class="mb-3 col-span-full">
               <input type="password" name="password" id="password" autocomplete="password" class="w-[375px] h-[38px] px-5 py-2.5 bg-neutral-200 rounded-md shadow justify-start items-center gap-2.5 inline-flex" placeholder="Password">
             </div>
-                <button class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500">Masuk</button>
+            <a href="/homepage" class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500">
+                <button>Masuk</button>
+                </a>
           </div>
           
           <div class="py-2.5 justify-center items-center gap-5 inline-flex">

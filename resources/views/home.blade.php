@@ -10,26 +10,12 @@
 </head>
 
 <body>
-    @include('partials.navbar');
-
+    @include('partials.navbar')
+    @include('partials.category')
+    
     <main>
         <div class="container">
-            <div
-                class="category fixed left-[249px] top-[120px] w-[106px] h-[181px] p-2.5 rounded-[10px] border border-emerald-500 flex-col justify-center items-center gap-2.5 inline-flex">
-                <div class="px-5 py-2 bg-emerald-500 rounded-[10px] justify-center items-center gap-2.5 inline-flex">
-                    <button
-                        class="text-white text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Semua</button>
-                </div>
-                <button
-                    class="text-zinc-900 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Loker</button>
-                <button
-                    class="text-zinc-900 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Event</button>
-                <button
-                    class="text-zinc-900 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Wisata</button>
-                <button
-                    class="text-zinc-900 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Kuliner</button>
-            </div>
-            <section class="max-w-[400px] mx-auto mt-[80px] mb-[10px]">
+            <section class="max-w-[400px] mx-auto mb-[10px]">
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] mr-[-50px] py-[1.2rem]">
                     <div class="right">
                         <div class="w-[450px] h-[50px] p-2.5 justify-between items-center inline-flex">

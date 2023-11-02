@@ -1,0 +1,1 @@
+<p class="text-xl text-center">- ini bagian kategori -</p>
