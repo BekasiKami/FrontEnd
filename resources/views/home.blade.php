@@ -12,7 +12,7 @@
 <body>
     @include('partials.navbar')
     @include('partials.category')
-    
+    @include('partials.trending')
     <main>
         <div class="container">
             <section class="max-w-[400px] mx-auto mb-[10px]">
@@ -67,6 +67,7 @@
                         </div>
                     </div>
                 </div>
+                
 
 
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mr-[-50px] py-[1.2rem]">

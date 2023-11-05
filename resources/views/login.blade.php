@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="relative bg-white">
-      <img class="w-auto h-auto left-[-148px] top-[-94px] absolute" src="assets/images/bg-login1.png" />
-      <img class="w-auto h-auto left-[988px] top-[175px] absolute" src="assets/images/bg-login2.png" />
+  <div class="relative bg-white max-w-md mx-auto top-52 z-10">
       <div class="flex min-h-full bg-gray-white rounded-[20px] flex-col justify-center items-center gap-5">
           <div class="px-2.5 justify-center items-center gap-2.5 inline-flex">
               <div class="text-stone-900 text-5xl font-bold">Bekasi Kami</div>
@@ -26,7 +24,7 @@
             <div class="mb-3 col-span-full">
               <input type="password" name="password" id="password" autocomplete="password" class="w-[375px] h-[38px] px-5 py-2.5 bg-neutral-200 rounded-md shadow justify-start items-center gap-2.5 inline-flex" placeholder="Password">
             </div>
-            <a href="/homepage" class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500">
+            <a href="/home" class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500">
                 <button>Masuk</button>
                 </a>
           </div>
@@ -57,5 +55,7 @@
           </div>
       </div>
   </div>
+    <img class="w-auto h-auto left-0 top-0 absolute z-0" src="assets/images/bg-login1.png" />
+    <img class="w-auto h-auto bottom-0 right-0 absolute z-0" src="assets/images/bg-login2.png" />
 </body>
 </html>

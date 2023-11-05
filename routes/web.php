@@ -59,5 +59,9 @@ Route::get('/login', function () {
 });
 
 Route::get('/register', function () {
-    return view('regis');
+    return view('register');
+});
+
+Route::get('/register2', function () {
+    return view('register2');
 });

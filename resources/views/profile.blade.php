@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    @include('partials.navbar');
+    @include('partials.navbar')
 
     <main>
       <div class="container">
