@@ -39,13 +39,13 @@
         <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-tight">Beranda</div>
     </a>
 
-    <a href="/"
-        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
+    <button
+        class="show-modal self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
         <div class="w-[14px] h-[15px] relative">
             <img src="assets/images/post-icon.svg" alt="Icon Posting">
         </div>
         <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-wide">Posting</div>
-    </a>
+    </button>
 
     <a href="/"
         class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
@@ -65,5 +65,6 @@
 
 </div>
 
+@include('partials.modal-posting')
 
 {{-- border-slate-900/10 --}}

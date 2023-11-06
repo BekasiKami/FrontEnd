@@ -1,10 +1,10 @@
-<div class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-40">
+<div class="modal h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-black bg-opacity-40 hidden">
     {{-- modal --}}
     <div class="bg-white rounded-[10px] shadow-lg w-1/4">
     {{-- modal header --}}
     <div class="border-b px-4 py-4 flex items-center">
         <h3 class="font-semibold text-lg mx-auto">Tambahkan Postingan</h3>
-        {{-- <button class="text-black close-modal">&cross;</button> --}}
+        <button class="text-black close-modal">&cross;</button>
     </div>
     {{-- modal body --}}
     <div class="p-3">
