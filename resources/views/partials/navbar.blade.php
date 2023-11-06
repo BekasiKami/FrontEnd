@@ -14,7 +14,9 @@
 
 
             <div class="menu-bar h-[20px] ml-7 justify-end items-center gap-10 inline-flex" id="menu-bar">
+              <a href="/notification">
                 <img src="assets/images/bell-icon.svg" alt="" style="cursor: pointer">
+              </a>
                 <img src="assets/images/menu-bar.png" style="cursor: pointer" />
             </div>
         </div>
@@ -47,7 +49,7 @@
         <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-wide">Posting</div>
     </button>
 
-    <a href="/"
+    <a href="/trending"
         class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
         <div class="w-[14px] h-[15px] relative">
             <img src="assets/images/chart-icon.svg" alt="Icon Trending">

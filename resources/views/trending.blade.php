@@ -13,7 +13,10 @@
     @include('partials.navbar')
     <main>
         <div class="container">
-            <section class="max-w-[400px] mx-auto mb-[10px]">
+            <section class="max-w-[450px] mx-auto mb-[10px]">
+                <div class="w-[450px] h-auto pl-5 justify-start items-center gap-2.5 inline-flex">
+                    <div class="text-zinc-700 text-base font-bold font-['Nunito']">Trending Bekasi Hari Ini</div>
+                </div>
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] mr-[-50px] py-[1.2rem]">
                     <div class="right">
                         <div class="w-[450px] h-[50px] p-2.5 justify-between items-center inline-flex">

@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home', [
-        'title'=> 'Home ',
+        'title'=> 'Home',
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/image-post1.svg",
@@ -64,4 +64,29 @@ Route::get('/register', function () {
 
 Route::get('/register2', function () {
     return view('register2');
+});
+
+Route::get('/trending', function () {
+    return view('trending', [
+        'title' => 'Trending',
+        "username" => "Fatih",
+        "post_time" => "Recenly",
+        "image" => "assets/images/image-post1.svg",
+        "profile_image" => "assets/images/silverash-profile.svg",
+        "caption" => "Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+        et. Donec sit amet odio vitae elit ullamcorper tempus...",
+        "upvotes"=> "20 Upvotes",
+        "comments"=> "3 Comments",
+    ]);
+});
+
+Route::get('/notification', function () {
+    return view('notification', [
+        'title'=> 'Notification',
+        'nama' => 'sirkoping_',
+        'nama2' => 'daydream',
+        "profile_image" => "assets/images/silverash-profile.svg",
+        "profile_image2" => "assets/images/putri-kecil-brocklesnar.png",
+    ]);
 });
