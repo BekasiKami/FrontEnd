@@ -15,8 +15,8 @@
     @include('partials.trending')
     <main>
         <div class="container">
-            <section class="max-w-[400px] mx-auto mb-[10px]">
-                <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] mr-[-50px] py-[1.2rem]">
+            <section class="w-[450px] mx-auto">
+                <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="right">
                         <div class="w-[450px] h-[50px] p-2.5 justify-between items-center inline-flex">
                             <div class="justify-center items-center gap-5 flex">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
 
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mr-[-50px] py-[1.2rem]">
