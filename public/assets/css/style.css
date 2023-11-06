@@ -1133,16 +1133,16 @@ select {
   position: relative;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
 .left-0 {
   left: 0px;
+}
+
+.left-10 {
+  left: 2.5rem;
 }
 
 .left-\[20px\] {
@@ -1157,8 +1157,8 @@ select {
   top: 0px;
 }
 
-.top-20 {
-  top: 5rem;
+.top-52 {
+  top: 13rem;
 }
 
 .top-\[-40px\] {
@@ -1167,30 +1167,6 @@ select {
 
 .top-\[90px\] {
   top: 90px;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.top-32 {
-  top: 8rem;
-}
-
-.top-auto {
-  top: auto;
-}
-
-.top-52 {
-  top: 13rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-20 {
-  right: 5rem;
 }
 
 .z-0 {
@@ -1203,6 +1179,10 @@ select {
 
 .col-span-full {
   grid-column: 1 / -1;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 
 .mx-0 {
@@ -1223,6 +1203,21 @@ select {
 .my-\[5\.2rem\] {
   margin-top: 5.2rem;
   margin-bottom: 5.2rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-9 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-3 {
@@ -1253,6 +1248,10 @@ select {
   margin-right: auto;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1269,20 +1268,20 @@ select {
   margin-top: 25px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.mt-52 {
+  margin-top: 13rem;
 }
 
 .block {
@@ -1409,6 +1408,10 @@ select {
   height: auto;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1501,6 +1504,15 @@ select {
   width: auto;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1533,6 +1545,10 @@ select {
   grid-template-columns: 0.5fr 3fr;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1543,6 +1559,14 @@ select {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-start {
@@ -1577,10 +1601,6 @@ select {
   gap: 2.5rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1605,8 +1625,8 @@ select {
   gap: 5px;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .self-stretch {
@@ -1635,10 +1655,6 @@ select {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded-md {
