@@ -90,3 +90,9 @@ Route::get('/notification', function () {
         "profile_image2" => "assets/images/putri-kecil-brocklesnar.png",
     ]);
 });
+
+Route::get('/editprofile', function () {
+    return view('editprofile', [
+        'title'=> 'Edit Profile',
+    ]);
+});

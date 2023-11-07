@@ -5,64 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/editprofile.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/editprofile.css" />
+    @vite('resources/css/app.css')
+<link rel="stylesheet" href="assets/css/style.css">
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="homepage.html">
-            <img src="../assets/images/secondary-logo.svg" alt="" />
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="homepage.html">
-                  <img src="../assets/images/home-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="search.html">
-                  <img src="../assets/images/search-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../assets/images/post-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="message-list.html">
-                  <img src="../assets/images/message-icon.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="userprofile.html">
-                  <img src="../assets/images/user-icon-active.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-bar" id="menu-bar">
-            <img src="../assets/images/menu-bar.png" style="cursor: pointer" />
-          </div>
-        </div>
-        <div class="option-menu">
-          <a href="notification.html">Notification</a>
-          <a href="#">Setting</a>
-          <a href="#">About</a>
-          <a href="#">Report a problem</a>
-          <a href="#">Log out</a>
-        </div>
-      </div>
-    </header>
+    {{-- @include('partials.navbar') --}}
+    @include('partials.sidebar')
 
     <main>
       <div class="container">
         <div class="edit-profile-wrapper">
           <div class="back-to-userprofile">
-            <a href="userprofile.html">
+            <a href="/profile">
               <img src="../assets/images/back-arrow.svg" alt="" />
               <span>Edit profile</span>
             </a>

@@ -45,7 +45,7 @@
             </div>
             <button
                 class="w-[375px] h-[38px] px-5 py-2.5 bg-white rounded-md shadow border border-zinc-300 justify-between items-center inline-flex hover:shadow-inner">
-                <img class="w-[30px] h-[30px]" src="https://via.placeholder.com/30x30" />
+                <img class="w-[30px] h-[30px]" src="assets/images/google-icon.png" />
                 <div class="text-stone-900 text-sm font-normal capitalize leading-[18px] tracking-tight">Masuk dengan
                     google </div>
                 <div class="w-[30px] h-[30px]"></div>
