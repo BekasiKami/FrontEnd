@@ -10,7 +10,7 @@
     @include('partials.category')
     @include('partials.trending')
     <main>
-        <div class="container">
+        <div class="container mx-auto">
             <section class="w-[450px] mx-auto">
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="right">
@@ -18,12 +18,11 @@
                             <div class="justify-center items-center gap-5 flex">
                                 <img class="w-[30px] h-[30px] rounded-[250px] border border-zinc-600"
                                     src="{{ $profile_image }}" />
-                                <div class="text-center text-zinc-700 text-sm font-normal font-['Nunito']">silver.ash
+                                <div class="text-center text-zinc-700 text-sm font-normal">silver.ash
                                 </div>
                             </div>
                             <div class="justify-center items-center gap-5 flex">
-                                <div
-                                    class="text-center text-zinc-700 text-opacity-60 text-xs font-normal font-['Nunito']">
+                                <div class="text-center text-zinc-700 text-opacity-60 text-xs font-normal">
                                     {{ $post_time }}
                                 </div>
                                 <button class="bg-transparent cursor-pointer border-0">
@@ -50,14 +49,13 @@
                         <div
                             class="posted-activities w-[450px] h-4 px-5 justify-start items-center gap-2.5 inline-flex">
                             <span
-                                class="text-center text-zinc-700 text-opacity-70 text-xs font-normal font-['Nunito']">{{ $upvotes }}</span>
+                                class="text-center text-zinc-700 text-opacity-70 text-xs font-normal">{{ $upvotes }}</span>
+                            <span class="text-center text-zinc-700 text-opacity-70 text-xs font-normal">-</span>
                             <span
-                                class="text-center text-zinc-700 text-opacity-70 text-xs font-normal font-['Nunito']">-</span>
-                            <span
-                                class="text-center text-zinc-700 text-opacity-70 text-xs font-normal font-['Nunito']">{{ $comments }}</span>
+                                class="text-center text-zinc-700 text-opacity-70 text-xs font-normal">{{ $comments }}</span>
                         </div>
                         <div class="w-[450px] h-[97px] p-5 justify-center items-center gap-2.5 inline-flex">
-                            <div class="w-[397px] text-zinc-700 text-sm font-normal font-['Nunito']">
+                            <div class="w-[397px] text-zinc-700 text-sm font-normal">
                                 {{ $caption }}
                             </div>
                         </div>
