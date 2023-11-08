@@ -19,10 +19,10 @@
                 <a href="#"
                     class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Wisata</a>
             </li>
-            <li class="mx-2">
+            {{-- <li class="mx-2">
                 <a
                     class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Kuliner</a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>
