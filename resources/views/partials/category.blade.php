@@ -1,14 +1,4 @@
-{{-- <div class="mt-5">
-    <div class="w-[450px] h-[41px] py-2.5 flex justify-center items-center gap-12 mx-auto">
-        <div class="text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Semua</div>
-        <div class="text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Loker</div>
-        <div class="text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Events</div>
-        <div class="text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Wisata</div>
-        <div class="text-zinc-700 text-sm font-normal font-['Nunito'] leading-[21px] tracking-wide">Kuliner</div>
-    </div>
-</div> --}}
-
-<div class="flex content-center mt-16">
+<div class="content-center mt-16">
     <div
         class="mx-auto w-[450px] text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
         <ul class="flex flex-wrap -mb-px">

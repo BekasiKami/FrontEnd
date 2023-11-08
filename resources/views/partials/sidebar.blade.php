@@ -1,4 +1,4 @@
-<div class="w-[200px] h-auto pb-5 flex-col justify-center items-start gap-2.5 inline-flex fixed left-[20px] mt-3">
+<div class="w-[200px] h-auto flex-col justify-center items-start gap-2.5 inline-flex fixed left-[20px] top-20">
 
     <a href="/home"
         class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">

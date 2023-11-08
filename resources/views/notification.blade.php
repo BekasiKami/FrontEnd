@@ -10,7 +10,7 @@
 
     <main>
         <div class="container">
-            <div class="notification-wrapper max-w-[500px] mx-auto my-auto">
+            <section class="notification-wrapper max-w-[500px] mx-auto my-auto">
 
                 <div class="w-[450px] h-16 p-5 justify-start items-center gap-2.5 inline-flex">
                     <div class="text-center text-black text-base font-bold font-['Nunito'] leading-normal">Notifikasi
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
         </div>
     </main>
 

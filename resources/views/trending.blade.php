@@ -2,17 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ $title }}</title>
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="assets/css/style.css">
+    @include('partials.head')
 </head>
 
 <body>
     @include('partials.navbar')
     <main>
-        <div class="container">
+        <div class="container mt-20">
             <section class="max-w-[450px] mx-auto mb-[10px]">
                 <div class="w-[450px] h-auto pl-5 justify-start items-center gap-2.5 inline-flex">
                     <div class="text-zinc-700 text-base font-bold font-['Nunito']">Trending Bekasi Hari Ini</div>
@@ -68,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </section>
         </div>
     </main>

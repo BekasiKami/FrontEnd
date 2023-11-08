@@ -9,7 +9,7 @@
     @include('partials.navbar')
 
     <main>
-        <div class="container">
+        <div class="container mt-20">
             <div class="profile-wrapper max-w-[440px] mx-auto my-[5.2rem]">
                 <div class="w-[439px] h-[140px] py-5 justify-center items-center gap-[25px] inline-flex">
                     <img class="w-[100px] h-[100px] rounded-full shadow" src="/assets/images/jessica.svg" />
