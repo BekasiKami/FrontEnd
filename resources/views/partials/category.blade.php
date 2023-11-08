@@ -10,7 +10,7 @@
 
 <div class="flex content-center mt-16">
     <div
-        class="mt-14 mx-auto w-[450px] text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+        class="mx-auto w-[450px] text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
         <ul class="flex flex-wrap -mb-px">
             <li class="mx-2">
                 <a href="#"
