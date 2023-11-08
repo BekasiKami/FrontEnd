@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{{-- Head Section --}}
+
 <head>
     @include('partials.head')
 </head>
+{{-- End of Head --}}
+
+{{-- Body Section --}}
 
 <body>
+    {{-- Navbar --}}
     @include('partials.navbar')
+    {{-- Home Category --}}
     @include('partials.category')
+    {{-- Trending --}}
     @include('partials.trending')
+    {{-- Home Content --}}
     <main>
         <div class="container mx-auto">
             <section class="w-[450px] mx-auto">
@@ -65,8 +74,10 @@
             </section>
         </div>
     </main>
+    {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>
 </body>
+{{-- End of Body --}}
 
 </html>
