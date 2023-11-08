@@ -8,8 +8,8 @@
         <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-tight">Beranda</div>
     </a>
 
-    <button
-        class="show-modal self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
+    <button data-modal-target="modal-posting" data-modal-toggle="modal-posting"
+        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
         <div class="w-[14px] h-[15px] relative">
             <img src="assets/images/post-icon.svg" alt="Icon Posting">
         </div>

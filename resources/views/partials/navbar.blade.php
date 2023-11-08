@@ -22,5 +22,9 @@
 
 
 
-@include('partials.modal-posting')
+@include('partials.modal.modal-posting')
+@include('partials.modal.modal-tentang')
+@include('partials.modal.modal-history')
+@include('partials.modal.modal-laporan')
+@include('partials.modal.modal-keluar')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
