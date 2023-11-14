@@ -108,7 +108,7 @@
 
             </div>
 
-            <div class="mb-5 max-w-[500px]">
+            {{-- <div class="mb-5 max-w-[500px]">
             <figure class="md:flex bottom-5 bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
                 <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" width="384"
@@ -131,7 +131,7 @@
                     </figcaption>
                 </div>
             </figure>
-            </div>
+            </div> --}}
 
         </div>
     </main>

@@ -17,7 +17,7 @@
     @include('partials.sidebar')
 
     <main>
-        <div class="container max-w-5xl mt-24">
+        <div class="container max-w-5xl pt-36">
 
             {{-- sidebar kiri --}}
             @include('partials.edit')
@@ -42,28 +42,28 @@
                     <form class="ml-7 mt-10">
                         <div class="mb-6 w-[400px] h-[38px] justify-center items-center gap-[30px] inline-flex">
                             <label for="username"
-                                class="h-6 justify-end items-center flex text-black text-base font-normal font-['Poppins'] leading-normal">Username</label>
+                                class="h-6 justify-end items-center flex text-black text-base font-normal font-poppins leading-normal">Username</label>
                             <input type="username" id="username"
-                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-['Poppins']"
+                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-poppins"
                                 placeholder="Username">
                         </div>
                         <div class="mb-6 w-[432px] h-[38px] justify-center items-center gap-[30px] inline-flex">
                             <label for="name"
-                                class="h-6 justify-end items-center flex text-black text-base font-normal font-['Poppins'] leading-normal">Nama</label>
+                                class="h-6 justify-end items-center flex text-black text-base font-normal font-poppins leading-normal">Nama</label>
                             <input type="name" id="name"
-                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-['Poppins']"
+                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-poppins"
                                 placeholder="Nama">
                         </div>
                         <div class="mb-6 w-[432px] h-[38px] justify-center items-center gap-[30px] inline-flex">
                             <label for="email"
-                                class="h-6 justify-end items-center flex text-black text-base font-normal font-['Poppins'] leading-normal">Email</label>
+                                class="h-6 justify-end items-center flex text-black text-base font-normal font-poppins leading-normal">Email</label>
                             <input type="email" id="email"
-                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-['Poppins']"
+                                class="w-[300px] h-[38px] px-5 py-2.5 bg-white rounded-lg border border-zinc-700 justify-start items-center gap-2.5 flex text-zinc-800 text-xs font-normal font-poppins"
                                 placeholder="Email">
                         </div>
-                        <div class="justify-center">
+                        <div class="ml-[100px] w-auto">
                             <button type="submit"
-                                class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">Simpan</button>
+                                class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55">Simpan</button>
                         </div>
                     </form>
 
