@@ -9,12 +9,12 @@
 
     <ul class="space-y-2 font-medium mt-10">
         <li>
-           <a href="#" class="w-[200px] h-[34px] px-4 py-2 bg-neutral-200 rounded-[7px] justify-start items-center gap-2.5 inline-flex dark:focus:ring-[#3b5998]/55">
+           <a href="/editprofile" class="w-[200px] h-[34px] px-4 py-2 bg-neutral-200 rounded-[7px] justify-start items-center gap-2.5 inline-flex dark:focus:ring-[#3b5998]/55">
               <span class="text-zinc-600 text-sm font-normal font-['Poppins'] leading-[18px]">Edit profile</span>
            </a>
         </li>
         <li>
-           <a href="#" class="w-[200px] h-[34px] px-4 py-2 justify-start items-center gap-2.5 inline-flex dark:focus:ring-[#3b5998]/55">
+           <a href="/changepassword" class="w-[200px] h-[34px] px-4 py-2 justify-start items-center gap-2.5 inline-flex dark:focus:ring-[#3b5998]/55">
               <span class="text-zinc-700 text-sm font-normal font-['Poppins'] leading-[18px]">Ubah kata sandi</span>
            </a>
         </li>

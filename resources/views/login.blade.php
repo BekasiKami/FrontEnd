@@ -21,22 +21,19 @@
                 <div class="text-stone-900 text-md font-normal capitalize leading-normal tracking-tight">Dapatkan
                     informasi & berita terkini seputar bekasi</div>
             </div>
-            <div class="flex-col gap-2.5 flex">
+            <form action="http://127.0.0.1:8001/api/auth-login" method="POST" enctype="application/x-www-form-urlencoded" class="flex-col gap-2.5 flex">
                 <div class="mb-3 col-span-full">
-                    <input type="text" name="username" id="username" autocomplete="username"
+                    <input type="text" name="email" id="email" autocomplete="email"
                         class="w-[375px] h-[38px] px-5 py-2.5 bg-neutral-200 rounded-md shadow justify-start items-center gap-2.5 inline-flex"
-                        placeholder="Email/Username">
+                        placeholder="Email">
                 </div>
                 <div class="mb-3 col-span-full">
                     <input type="password" name="password" id="password" autocomplete="password"
                         class="w-[375px] h-[38px] px-5 py-2.5 bg-neutral-200 rounded-md shadow justify-start items-center gap-2.5 inline-flex"
                         placeholder="Password">
                 </div>
-                <a href="/home"
-                    class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500">
-                    <button>Masuk</button>
-                </a>
-            </div>
+                    <button class="self-stretch px-5 py-2.5 bg-emerald-500 rounded-md shadow justify-center items-center gap-2.5 inline-flex text-white text-sm font-normal leading-[18px] hover:bg-red-500" type="submit" value="submit">Masuk</button>
+            </form>
 
             <div class="py-2.5 justify-center items-center gap-5 inline-flex">
                 <div class="w-[148px] h-[0px] border-b border-zinc-800"></div>

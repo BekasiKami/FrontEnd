@@ -25,19 +25,8 @@
             
             <div class="edit-profile-wrapper max-w-[500px]  ml-[380px]">
                 <div class="back-to-userprofile">
-                    <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Edit profile</span>
+                    <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Ubah Kata Sandi</span>
                 </div>
-                <div class="edit-profile relative mx-0 my-6 px-8 py-4">
-                    <div class="edit-header grid grid-cols-[0.5fr_1.2fr] mb-[15px]">
-                        <img class="w-[100px] h-[100px]" src="assets/images/jessica.svg" alt="" />
-                        <div class="edit-profile-description">
-                            <div class="edit-profile-description-top flex items-center justify-between mb-5">
-                                <h4 class="text-xl font-normal text-[rgba(69,69,69,1)]">Jessica_</h4>
-                            </div>
-                            <button class="text-blue-600 font-bold bg-transparent text-base border-0">Edit foto profil</button>
-                        </div>
-                    </div>
-
 
                     <form class="ml-7 mt-10">
                         <div class="mb-6 w-[400px] h-[38px] justify-center items-center gap-[30px] inline-flex">

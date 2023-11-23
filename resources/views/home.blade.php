@@ -20,7 +20,7 @@
     {{-- Home Content --}}
     <main>
         <div class="container mx-auto">
-            <section class="w-[450px] mx-auto">
+            <section class="w-[450px] mx-auto md:max-lg:w-[400px]">
                 <div class="grid grid-cols-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="right">
                         <div class="w-[450px] h-[50px] p-2.5 justify-between items-center inline-flex">

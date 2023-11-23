@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('login');
 });
 
+route::get('/postlogin', 'loginController@postlogin')->name('postlogin');
+
 Route::get('/home', function () {
     return view('home', [
         'title'=> 'Home',
@@ -94,5 +96,11 @@ Route::get('/notification', function () {
 Route::get('/editprofile', function () {
     return view('editprofile', [
         'title'=> 'Edit Profile',
+    ]);
+});
+
+Route::get('/changepassword', function () {
+    return view('gantipass', [
+        'title'=> 'Ubah Password',
     ]);
 });
