@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  @include('partials.head')
+    @include('partials.head')
 </head>
 
 <body>
@@ -19,8 +19,9 @@
                                 <div class="text-black text-sm font-bold font-['Poppins'] leading-[21px]">Kevin86</div>
                                 <a href="/editprofile"
                                     class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-start items-center gap-2.5 flex">
-                                    <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Edit profile</div>
-                            </a>
+                                    <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Edit
+                                        profile</div>
+                                </a>
                             </div>
                             <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Kevin Sanjaya
                             </div>
