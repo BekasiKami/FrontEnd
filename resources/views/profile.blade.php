@@ -10,47 +10,49 @@
 
     <main>
         <div class="container mt-20">
-            <div class="profile-wrapper max-w-[440px] mx-auto my-[5.2rem]">
-                <div class="w-[439px] h-[140px] py-5 justify-center items-center gap-[25px] inline-flex">
-                    <img class="w-[100px] h-[100px] rounded-full shadow" src="/assets/images/jessica.svg" />
-                    <div class="flex-col justify-start items-start inline-flex">
-                        <div class="w-[314px] h-[75px] pb-2.5 flex-col justify-start items-start gap-2.5 flex">
-                            <div class="self-stretch justify-between items-center inline-flex">
-                                <div class="text-black text-sm font-bold font-['Poppins'] leading-[21px]">Kevin86</div>
-                                <a href="/editprofile"
-                                    class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-start items-center gap-2.5 flex">
-                                    <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Edit
-                                        profile</div>
-                                </a>
+            <div class="profile-wrapper md:max-w-[440px] mx-auto my-[5.2rem]">
+                <div class="flex">
+                    <div class="inline-flex w-full h-auto py-5 px-4 justify-between items-center gap-[25px]">
+                        <img class="w-[100px] h-[100px] rounded-full shadow" src="/assets/images/jessica.svg" />
+                        <div class="flex-col w-full justify-start items-start inline-flex">
+                            <div class="w-full h-auto pb-2.5 flex-col justify-start items-start flex">
+                                <div class="justify-between items-center inline-flex w-[284px]">
+                                    <div class="text-black text-sm font-bold font-['Poppins'] leading-[21px]">Kevin86</div>
+                                    <a href="/editprofile"
+                                        class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-end items-center flex">
+                                        <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Edit
+                                            profile</div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="text-black text-xs font-normal font-['Poppins'] leading-[18px]">Kevin Sanjaya
+                            <div class="pb-2.5 w-full justify-start flex text-black text-xs font-normal font-['Poppins'] leading-[18px]">Kevin Sanjaya
                             </div>
-                        </div>
-                        <div class="w-[314px] justify-between items-center inline-flex">
-                            <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px]">6 Postingan
-                            </div>
-                            <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px]">3 Tersimpan
+                            <div class="w-full justify-between items-center inline-flex">
+                                <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px]">6 Postingan
+                                </div>
+                                <div class="text-black text-sm font-normal font-['Poppins'] leading-[21px] justify-end">3 Tersimpan
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-[440px] h-[77px] p-5 justify-between items-center inline-flex">
+                <div class="w-full h-auto py-5 justify-between items-center inline-flex px-4">
                     <button
-                        class="px-4 py-2 rounded-[10px] shadow border border-emerald-500 justify-start items-center gap-2.5 flex">
+                        class="px-4 py-2 rounded-[10px] shadow border border-emerald-500 justify-start items-center flex">
                         <div class="text-emerald-500 text-xs font-normal font-['Poppins'] leading-[21px]">Postingan
                         </div>
                     </button>
                     <button
-                        class="px-4 py-2 bg-emerald-500 rounded-[10px] shadow justify-start items-center gap-2.5 flex">
+                        class="px-4 py-2 bg-emerald-500 rounded-[10px] shadow justify-start items-center flex">
                         <div class="text-white text-xs font-normal font-['Poppins'] leading-[21px]">Tersimpan</div>
                     </button>
                 </div>
 
-                <div class="w-[440px] h-[0px] border-2 border-stone-900"></div>
+                <div class="w-full h-[0px] border-2 border-stone-900"></div>
 
 
-                <div class="grid grid-cols-2 md:grid-cols-3 py-5 gap-4">
+                <div class="w-full grid grid-cols-2 md:grid-cols-3 py-5 gap-4">
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
@@ -100,13 +102,6 @@
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
                     </div>
                 </div>
-
-                {{-- <div class="w-[440px] h-[183px] py-5 justify-start items-start gap-[5px] inline-flex">
-            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-1.png" />
-            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-2.png" />
-            <img class="w-[143px] h-[143px] cursor-pointer" src="assets/images/post-3.png" />
-        </div> --}}
-
             </div>
 
             {{-- <div class="mb-5 max-w-[500px]">

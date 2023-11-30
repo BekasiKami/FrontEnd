@@ -23,7 +23,7 @@
             @include('partials.editbar')
 
             
-            <div class="edit-profile-wrapper max-w-[500px]  ml-[380px]">
+            {{-- <div class="edit-profile-wrapper max-w-[500px]  ml-[380px]">
                 <div class="back-to-userprofile">
                     <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Ubah Kata Sandi</span>
                 </div>
@@ -55,11 +55,34 @@
                                 class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55">Simpan</button>
                         </div>
                     </form>
-
-
-
                 </div>
+            </div> --}}
+
+
+            <div class="edit-profile-wrapper max-w-[500px] mx-auto mt-10">
+                <div class="back-to-userprofile mb-6">
+                    <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Ubah Kata Sandi</span>
+                </div>
+            
+                <form class="ml-7 mt-10">
+                    <div class="mb-6">
+                        <label for="username" class="text-black text-base font-normal font-poppins leading-normal">Username</label>
+                        <input type="text" id="username" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Username">
+                    </div>
+                    <div class="mb-6">
+                        <label for="name" class="text-black text-base font-normal font-poppins leading-normal">Nama</label>
+                        <input type="text" id="name" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Nama">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="text-black text-base font-normal font-poppins leading-normal">Email</label>
+                        <input type="email" id="email" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Email">
+                    </div>
+                    <div class="ml-auto">
+                        <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Simpan</button>
+                    </div>
+                </form>
             </div>
+
             
         </div>
     </main>
