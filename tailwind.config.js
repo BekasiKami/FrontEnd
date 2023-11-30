@@ -19,7 +19,6 @@ export default {
 
                 //Desktop
                 'min-desktop': '1160px',
- 
               },
         },
         fontFamily: {

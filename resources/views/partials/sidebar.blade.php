@@ -1,4 +1,4 @@
-<div class="w-[200px] h-auto flex-col justify-center items-start gap-2.5 inline-flex fixed left-[20px] top-20">
+<div class="w-[200px] h-auto flex-col justify-center items-start gap-2.5 inline-flex fixed left-[20px] top-20 max-tablet:invisible">
 
     <a href="/home"
         class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
@@ -39,23 +39,32 @@
 {{-- RESPONSIVE MOBILE --}}
 <div
     class="fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600 min-desktop:invisible">
-    <div class="w-full">
-        <div class="grid max-w-xs grid-cols-3 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600"
+
+    {{-- <div class="w-full">
+        <div class="grid max-w-sm grid-cols-5 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600"
             role="group">
             <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                New
-            </button>
-            <button type="button"
                 class="px-5 py-1.5 text-xs font-medium text-white bg-gray-900 dark:bg-gray-300 dark:text-gray-900 rounded-lg">
-                Popular
+                Semua
             </button>
             <button type="button"
                 class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                Following
+                Loker
+            </button>
+            <button type="button"
+                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                Event
+            </button>
+            <button type="button"
+                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                Wisata
+            </button>
+            <button type="button"
+                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                Kuliner
             </button>
         </div>
-    </div>
+    </div> --}}
 
     {{-- ICON NAVBAR --}}
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
@@ -85,7 +94,7 @@
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
 
-        <button data-tooltip-target="tooltip-post" type="button"
+        <button data-modal-target="modal-posting" data-modal-toggle="modal-posting" data-tooltip-target="tooltip-post" type="button"
             class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
             <span class="sr-only">New post</span>
@@ -111,14 +120,16 @@
 
         <button data-tooltip-target="tooltip-settings" type="button"
             class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <a href="/profile">
             <div class="w-[25px] h-[25px] relative">
                 <img src="assets/icons/profile-icon.svg" alt="Icon Profile">
             </div>
+            </a>
             <span class="sr-only">Profile</span>
         </button>
         <div id="tooltip-settings" role="tooltip"
             class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Settings
+            Profile
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
     </div>
