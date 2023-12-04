@@ -9,7 +9,7 @@
     @include('partials.navbar')
 
     <main>
-        <div class="container">
+        <div class="container mt-3 mx-auto">
             <section class="notification-wrapper max-w-[500px] mx-auto my-auto">
 
                 <div class="w-[450px] h-16 p-5 justify-start items-center gap-2.5 inline-flex">

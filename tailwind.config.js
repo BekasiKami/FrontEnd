@@ -16,6 +16,9 @@ export default {
                 //screen mobile
                 'mobile': '608px',
                 'max-mobile': {'max': '767px'},
+
+                //Desktop
+                'min-desktop': '1160px',
               },
         },
         fontFamily: {
