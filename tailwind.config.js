@@ -14,7 +14,7 @@ export default {
                 'max-tablet': {'max': '1159px'},
                 
                 //screen mobile
-                'mobile': '608px',
+                'mobile': {'max': '431px'},
                 'max-mobile': {'max': '767px'},
 
                 //Desktop
