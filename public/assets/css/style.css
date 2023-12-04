@@ -906,6 +906,10 @@ select {
   top: 5rem;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -998,6 +1002,11 @@ select {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .-mb-px {
@@ -1114,6 +1123,14 @@ select {
 
 .mt-\[10px\] {
   margin-top: 10px;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .block {
@@ -2561,6 +2578,21 @@ select {
     margin-right: auto;
   }
 
+  .max-mobile\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .max-mobile\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .max-mobile\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .max-mobile\:w-auto {
     width: auto;
   }
@@ -2583,6 +2615,36 @@ select {
 
   .max-mobile\:w-0 {
     width: 0px;
+  }
+
+  .max-mobile\:w-full {
+    width: 100%;
+  }
+
+  .max-mobile\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .max-mobile\:max-w-full {
+    max-width: 100%;
+  }
+
+  .max-mobile\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .max-mobile\:p-20 {
+    padding: 5rem;
+  }
+
+  .max-mobile\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .max-mobile\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
