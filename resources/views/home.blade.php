@@ -19,7 +19,7 @@
     @include('partials.trending')
     {{-- Home Content --}}
     <main>
-        <div class="container mx-auto md:max-lg:w-[400px]">
+        <div class="container mx-auto max-mobile:mx-auto">
             <section class="w-[450px] mx-auto">
                 <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="">
