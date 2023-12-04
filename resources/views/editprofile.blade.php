@@ -70,7 +70,7 @@
             </div> --}}
 
             <div class="edit-profile-wrapper max-w-[500px] mx-auto">
-                <div class="edit-profile my-6 px-8 py-4">
+                <div class="edit-profile my-6 md:px-8 px-4 py-4">
                     <div class="edit-header grid grid-cols-[1fr] mb-5">
                         <img class="w-[100px] h-[100px] mx-auto mb-3" src="assets/images/jessica.svg" alt="" />
                         <div class="edit-profile-description text-center">
