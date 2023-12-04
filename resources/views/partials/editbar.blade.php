@@ -21,8 +21,8 @@
      </ul>
 </div> --}}
 
-<div class="w-full h-auto flex items-center justify-center mx-auto">
-   <div class="px-8 grid grid-cols-3 gap-4 text-center">
+<div class="w-full h-auto flex items-center justify-center">
+   <div class="w-auto grid grid-cols-3 md:gap-10 gap-4 text-center">
       <div class="col-start-1 col-span-1 ...">
          <a href="/profile">
             <button type="button"

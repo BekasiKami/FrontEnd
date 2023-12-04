@@ -58,13 +58,13 @@
                 </div>
             </div> --}}
 
-
-            <div class="edit-profile-wrapper max-w-[500px] mx-auto mt-10">
+            
+            <div class="edit-profile-wrapper max-w-[500px] mx-auto mt-10 px-4 md:px-8">
                 <div class="back-to-userprofile mb-6">
                     <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Ubah Kata Sandi</span>
                 </div>
             
-                <form class="ml-7 mt-10">
+                <form class="mt-10">
                     <div class="mb-6">
                         <label for="username" class="text-black text-base font-normal font-poppins leading-normal">Username</label>
                         <input type="text" id="username" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Username">
