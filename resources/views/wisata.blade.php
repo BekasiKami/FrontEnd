@@ -18,8 +18,8 @@
     {{-- Trending --}}
     @include('partials.trending')
     {{-- Home Content --}}
-    {{-- <main>
-        <div class="container mx-auto max-mobile:mx-auto">
+    <main>
+        <div class="container mx-auto md:max-lg:w-[400px]">
             <section class="w-[450px] mx-auto">
                 <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="">
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="posted-image">
-                            <img class="w-[450px] h-[268px] rounded-[10px]" src="{{ $image }}" />
+                            <img class="w-[450px] h-auto rounded-[10px]" src="{{ $image }}" />
                         </div>
 
                         <div class="w-[133.75px] h-[60px] p-5 justify-start items-start gap-5 inline-flex">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    {{-- <div class="">
                         <div class="w-[450px] h-[50px] p-2.5 justify-between items-center inline-flex">
                             <div class="justify-center items-center gap-5 flex">
                                 <img class="w-[30px] h-[30px] rounded-[250px] border border-zinc-600"
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="posted-image">
-                            <img class="w-[450px] h-[268px] rounded-[10px]" src="{{ $image }}" />
+                            <img class="w-[450px] h-auto rounded-[10px]" src="{{ $image }}" />
                         </div>
 
                         <div class="w-[133.75px] h-[60px] p-5 justify-start items-start gap-5 inline-flex">
@@ -116,12 +116,12 @@
                                 {{ $caption }}
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
             </section>
         </div>
-    </main> --}}
+    </main>
     {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>

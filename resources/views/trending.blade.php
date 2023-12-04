@@ -90,7 +90,7 @@
     <main>
         <div class="container mx-auto md:max-lg:w-[400px]">
             <section class="w-[450px] mx-auto">
-                <div class=" h-auto ml-5 pt-16 justify-start items-center inline-flex text-zinc-700 text-base font-bold font-['Nunito']">
+                <div class=" h-auto ml-5 pt-24 justify-start items-center inline-flex text-zinc-700 text-base font-bold font-['Nunito']">
                     Trending Bekasi Hari Ini
                 </div>
                 <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">

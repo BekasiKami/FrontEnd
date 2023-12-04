@@ -1,4 +1,4 @@
-<div class="h-[20px] ml-7 justify-end items-center gap-10 inline-flex">
+<div class="h-[20px] ml-7 justify-end items-center gap-10 inline-flex max-mobile:visible">
     {{-- notifikasi --}}
     <a href="/notification">
         <img src="assets/icons/bell-icon.svg" alt="" style="cursor: pointer">

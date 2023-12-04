@@ -8,7 +8,7 @@
         <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-tight">Beranda</div>
     </a>
 
-    <button data-modal-target="modal-posting" data-modal-toggle="modal-posting"
+    <button data-modal-target="modal-newpost" data-modal-toggle="modal-posting"
         class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
         <div class="w-[14px] h-[15px] relative">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
@@ -38,7 +38,7 @@
 
 {{-- RESPONSIVE MOBILE --}}
 <div
-    class="fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600 min-desktop:invisible">
+    class="fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 min-desktop:invisible max-mobile:fixed">
 
     {{-- <div class="w-full">
         <div class="grid max-w-sm grid-cols-5 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600"
@@ -94,7 +94,7 @@
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
 
-        <button data-modal-target="modal-posting" data-modal-toggle="modal-posting" data-tooltip-target="tooltip-post" type="button"
+        <button data-modal-target="modal-newpost" data-modal-toggle="modal-posting" data-tooltip-target="tooltip-post" type="button"
             class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
             <span class="sr-only">New post</span>
