@@ -880,6 +880,10 @@ select {
   right: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .start-0 {
   inset-inline-start: 0px;
 }
@@ -894,6 +898,10 @@ select {
 
 .top-20 {
   top: 5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .z-0 {
@@ -1246,8 +1254,16 @@ select {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-48 {
   max-height: 12rem;
+}
+
+.max-h-\[600px\] {
+  max-height: 600px;
 }
 
 .max-h-full {
@@ -1379,6 +1395,10 @@ select {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1401,6 +1421,10 @@ select {
 
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .max-w-full {
@@ -1761,6 +1785,10 @@ select {
   border-color: rgb(39 39 42 / var(--tw-border-opacity));
 }
 
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -1813,6 +1841,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -2590,10 +2623,43 @@ select {
   }
 }
 
+@media (max-width: 1025px) {
+  .max-tablet\:invisible {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 431px) {
   .mobile\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .max-mobile\:visible {
+    visibility: visible;
+  }
+
+  .max-mobile\:invisible {
+    visibility: hidden;
+  }
+
+  .max-mobile\:fixed {
+    position: fixed;
+  }
+
+  .max-mobile\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-mobile\:w-0 {
+    width: 0px;
+  }
+
+  .max-mobile\:w-56 {
+    width: 14rem;
   }
 }
 

@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    @include('partials.navbar')
+    {{-- @include('partials.navbar') --}}
 
     <main>
         <div class="container mt-20">
@@ -44,20 +44,25 @@
                             <div class="w-full h-auto pb-2.5 flex-col justify-start items-start flex">
                                 <div class="justify-between items-center inline-flex w-full sm:w-[284px]">
                                     <div class="text-black text-sm font-bold font-'Poppins' leading-5">Kevin86</div>
-                                    <a href="/editprofile" class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-end items-center flex">
-                                        <div class="text-black text-xs font-normal font-'Poppins' leading-4">Edit profile</div>
+                                    <a href="/editprofile"
+                                        class="px-4 py-2 bg-neutral-200 rounded-[10px] shadow justify-end items-center flex">
+                                        <div class="text-black text-xs font-normal font-'Poppins' leading-4">Edit
+                                            profile</div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="pb-2.5 w-full justify-start flex text-black text-xs font-normal font-'Poppins' leading-4">Kevin Sanjaya</div>
+                            <div
+                                class="pb-2.5 w-full justify-start flex text-black text-xs font-normal font-'Poppins' leading-4">
+                                Kevin Sanjaya</div>
                             <div class="w-full justify-between items-center inline-flex">
                                 <div class="text-black text-sm font-normal font-'Poppins' leading-5">6 Postingan</div>
-                                <div class="text-black text-sm font-normal font-'Poppins' leading-5 sm:justify-end">3 Tersimpan</div>
+                                <div class="text-black text-sm font-normal font-'Poppins' leading-5 sm:justify-end">3
+                                    Tersimpan</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="w-full h-auto py-5 justify-between items-center inline-flex px-4">
                     <button
@@ -65,8 +70,7 @@
                         <div class="text-emerald-500 text-xs font-normal font-['Poppins'] leading-[21px]">Postingan
                         </div>
                     </button>
-                    <button
-                        class="px-4 py-2 bg-emerald-500 rounded-[10px] shadow justify-start items-center flex">
+                    <button class="px-4 py-2 bg-emerald-500 rounded-[10px] shadow justify-start items-center flex">
                         <div class="text-white text-xs font-normal font-['Poppins'] leading-[21px]">Tersimpan</div>
                     </button>
                 </div>
@@ -77,51 +81,63 @@
                 <div class="w-full grid grid-cols-2 md:grid-cols-3 py-5 gap-4">
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg')">
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt=""
+                            onclick="showModal('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg')">
                     </div>
                 </div>
             </div>
@@ -129,7 +145,7 @@
             {{-- <div class="mb-5 max-w-[500px]">
             <figure class="md:flex bottom-5 bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
                 <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" width="384"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" onclick="showModal('')" width="384"
                     height="512">
                 <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                     <blockquote>
@@ -152,9 +168,22 @@
             </div> --}}
 
         </div>
+
+        <!-- The Modal -->
+        <div id="modal"
+            class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
+
+            <!-- The close button -->
+            <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
+                onclick="closeModal()">&times;</a>
+
+            <!-- A big image will be displayed here -->
+            <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
+        </div>
     </main>
 
     <script src="../js/app.js"></script>
+    <script src="../js/post.js"></script>
 </body>
 
 </html>

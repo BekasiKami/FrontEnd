@@ -18,7 +18,7 @@
     {{-- Trending --}}
     @include('partials.trending')
     {{-- Home Content --}}
-    {{-- <main>
+    <main>
         <div class="container mx-auto max-mobile:mx-auto">
             <section class="w-[450px] mx-auto">
                 <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
@@ -121,7 +121,7 @@
 
             </section>
         </div>
-    </main> --}}
+    </main>
     {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>

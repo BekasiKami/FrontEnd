@@ -9,11 +9,13 @@ export default {
     theme: {
         extend: {
             screens: {
-                //Screen tab        
-                'tablet': {'max': '1025px'},
+                //Screen tab
+                'tablet': '768px',          
+                'max-tablet': {'max': '1025px'},
                 
                 //screen mobile
                 'mobile': {'max': '431px'},
+                'max-mobile': {'max': '767px'},
 
                 //Desktop
                 'min-desktop': '1160px',
