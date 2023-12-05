@@ -6,7 +6,8 @@
 </head>
 
 <body>
-    {{-- @include('partials.navbar') --}}
+    @include('partials.modal.modal-posting')
+    @include('partials.navbar')
 
     <main>
         <div class="container mt-20">
@@ -166,9 +167,7 @@
                 </div>
             </figure>
             </div> --}}
-
         </div>
-        @include('partials.modal.modal-posting')
     </main>
     <script src="../js/app.js"></script>
     <script src="../js/post.js"></script>

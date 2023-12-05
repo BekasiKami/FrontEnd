@@ -36,7 +36,7 @@ Route::get('/home', function () {
 
 Route::get('/loker', function () {
     return view('loker', [
-        'title'=> 'Home',
+        'title'=> 'Loker',
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/dummy/loker.jpg",
@@ -57,7 +57,7 @@ Route::get('/loker', function () {
 
 Route::get('/event', function () {
     return view('event', [
-        'title'=> 'Home',
+        'title'=> 'Event',
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/dummy/event.jpg",
@@ -72,10 +72,25 @@ Route::get('/event', function () {
 
 Route::get('/wisata', function () {
     return view('wisata', [
-        'title'=> 'Home',
+        'title'=> 'Wisata',
         "username" => "Fatih",
         "post_time" => "Recenly",
         "image" => "assets/images/dummy/mlm.png",
+        "profile_image" => "assets/images/silverash-profile.svg",
+        "caption" => "Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+        et. Donec sit amet odio vitae elit ullamcorper tempus...",
+        "upvotes"=> "20 Upvotes",
+        "comments"=> "3 Comments",
+    ]);
+});
+
+Route::get('/kuliner', function () {
+    return view('kuliner', [
+        'title'=> 'Kuliner',
+        "username" => "Fatih",
+        "post_time" => "Recenly",
+        "image" => "assets/images/dummy/geprek.jpg",
         "profile_image" => "assets/images/silverash-profile.svg",
         "caption" => "Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend

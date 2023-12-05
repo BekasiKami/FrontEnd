@@ -20,7 +20,7 @@
                     class="inline-block py-4 md:px-4 mobile:px-3.5 min-desktop:px-4 max-mobile:px-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 mobile:text-xs">Wisata</a>
             </li>
             <li class="md:mx-2 mx-2">
-                <a
+                <a href="/kuliner"
                     class="inline-block py-4 md:px-4 mobile:px-3.5 min-desktop:px-4 max-mobile:px-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 mobile:text-xs">Kuliner</a>
             </li>
         </ul>

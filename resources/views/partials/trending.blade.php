@@ -24,9 +24,11 @@
             <div class="text-zinc-700 text-sm font-normal">Demo Massa</div>
         </div>
     </div>
+    <a href="/trending">
     <div class="w-[250px] px-4 py-2 justify-start items-center gap-2.5 inline-flex">
         <div class="text-zinc-700 text-sm font-normal">Lihat Semua</div>
     </div>
+    </a>
 </div>
 
 
