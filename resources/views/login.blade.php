@@ -108,7 +108,7 @@
                 bekasi</div>
         </div>
 
-        <form action="http://127.0.0.1:8001/api/auth-login" method="POST" enctype="application/x-www-form-urlencoded">
+        <form action="http://127.0.0.1:7070/api/auth-login" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="mb-3">
                 <input type="text" name="email" id="email" autocomplete="email"
                     class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Email">
