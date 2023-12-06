@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,17 @@ Route::get('/', function () {
     return view('login');
 });
 
+// Call API
+Route::get('view/detail/users', [HomeController::class, 'index'])->name('view/detail/users');
+// Login API
+Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
+Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
+// Contoh memberikan nama route
+Route::get('/homee', [HomeController::class, 'index'])->name('homee');
+//Logout clear token
+Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
+
+
 route::get('/postlogin', 'loginController@postlogin')->name('postlogin');
 
 Route::get('/home', function () {
@@ -31,8 +44,10 @@ Route::get('/home', function () {
         et. Donec sit amet odio vitae elit ullamcorper tempus...",
         "upvotes"=> "20 Upvotes",
         "comments"=> "3 Comments",
-    ]);
+    ])->name('home');
 });
+
+
 
 Route::get('/loker', function () {
     return view('loker', [
