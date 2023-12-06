@@ -79,10 +79,10 @@
                                 </div>
                             </div>
                             <div class="post">
+                                <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto"
+                                    src="{{ $image }}" />
                                 {{-- <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
-                                    src="{{ $image }}" /> --}}
-                                <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
-                                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" />
+                                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" /> --}}
                             </div>
 
                             <div
