@@ -22,7 +22,7 @@
                     </p>
                 </div>
                 <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal"
-                    class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50"
+                    class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50"
                     type="button">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         viewBox="0 0 16 3">
@@ -36,21 +36,21 @@
 
             <!-- Dropdown menu -->
             <div id="dropdownDotsHorizontal"
-                class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700"
                     aria-labelledby="dropdownMenuIconHorizontalButton">
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah
+                            class="block px-4 py-2 hover:bg-gray-100">Tambah
                             ke simpan</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laporkan</a>
+                            class="block px-4 py-2 hover:bg-gray-100">Laporkan</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan
+                            class="block px-4 py-2 hover:bg-gray-100">Sembunyikan
                             postingan</a>
                     </li>
                 </ul>
@@ -94,6 +94,8 @@
                 <span class="text-center text-zinc-700 text-opacity-70 text-xs font-normal"> | </span>
                 <span class="text-center text-zinc-700 text-opacity-70 text-xs font-normal">0 Komentar</span>
             </div>
+            <br>
+            <br>
             <div class="w-[380px] border-b border-gray-600"></div>
         </div>
     </div>

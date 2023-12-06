@@ -7,7 +7,7 @@
 
 <body>
     @include('partials.modal.modal-posting')
-    {{-- @include('partials.navbar') --}}
+    @include('partials.navbar')
 
     <main>
         <div class="container mt-20">
