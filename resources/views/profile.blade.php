@@ -7,7 +7,7 @@
 
 <body>
     @include('partials.modal.modal-posting')
-    @include('partials.navbar')
+    {{-- @include('partials.navbar') --}}
 
     <main>
         <div class="container mt-20">
@@ -54,11 +54,13 @@
                             </div>
                             <div
                                 class="pb-2.5 w-full justify-start flex text-black text-xs font-normal font-'Poppins' leading-4">
-                                Kevin Sanjaya</div>
+                                Kevin Sanjaya
+                            </div>
                             <div class="w-full justify-between items-center inline-flex">
-                                <div class="text-black text-sm font-normal font-'Poppins' leading-5">6 Postingan</div>
+                                <div class="text-black text-sm font-normal font-'Poppins' leading-5">12 Postingan</div>
                                 <div class="text-black text-sm font-normal font-'Poppins' leading-5 sm:justify-end">3
-                                    Tersimpan</div>
+                                    Tersimpan
+                                </div>
                             </div>
                         </div>
                     </div>
