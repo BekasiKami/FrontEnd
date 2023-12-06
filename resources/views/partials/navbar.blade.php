@@ -1,4 +1,4 @@
-<div class="relative z-20">
+<div class="relative z-10">
     <header class="fixed top-0 w-full mx-auto bg-white border-b my-auto border-slate-900/10">
         <div class="header-wrapper flex justify-between items-center mx-9 my-2">
             <a href="/home" class="text-zinc-700 text-4xl font-bold font-sans leading-[54px] tracking-[2.52px]">BAKA

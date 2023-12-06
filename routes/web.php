@@ -37,7 +37,7 @@ Route::get('/home', function () {
         'title'=> 'Home',
         "username" => "Fatih",
         "post_time" => "Recenly",
-        "image" => "assets/images/image-post1.svg",
+        "image" => "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
         "profile_image" => "assets/images/silverash-profile.svg",
         "caption" => "Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend

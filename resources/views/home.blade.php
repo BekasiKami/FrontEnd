@@ -39,19 +39,54 @@
                                     <div class="text-center text-zinc-700 text-opacity-60 text-xs font-normal">
                                         {{ $post_time }}
                                     </div>
-                                    <button class="bg-transparent cursor-pointer border-0">
-                                        <img src="assets/images/three-dots.png" alt="" />
+
+                                    <button id="dropdownMenuIconHorizontalButton"
+                                        data-dropdown-toggle="dropdownDotsHorizontal"
+                                        class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                        type="button">
+                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 16 3">
+                                            <path
+                                                d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                        </svg>
                                     </button>
+
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownDotsHorizontal"
+                                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                            aria-labelledby="dropdownMenuIconHorizontalButton">
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah ke simpan</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laporkan</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan postingan</a>
+                                            </li>
+                                        </ul>
+                                        {{-- <div class="py-2">
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Separated
+                                                link</a>
+                                        </div> --}}
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="post">
+                                <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto"
+                                    src="{{ $image }}" />
                                 {{-- <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
-                                    src="{{ $image }}" /> --}}
-                                <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
-                                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" />
+                                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" /> --}}
                             </div>
 
-                            <div class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto my-5 justify-start items-start gap-5 inline-flex px-5 md:p-0">
+                            <div
+                                class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto my-5 justify-start items-start gap-5 inline-flex px-5 md:p-0">
                                 <button class="likes w-4 h-4">
                                     <img src="assets/images/arrow-turn-up-solid.svg" alt="" />
                                 </button>
