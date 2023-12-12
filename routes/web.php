@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,27 +26,28 @@ Route::get('view/detail/users', [HomeController::class, 'index'])->name('view/de
 Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
 Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
 // Contoh memberikan nama route
-Route::get('/homee', [HomeController::class, 'index'])->name('homee');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 //Logout clear token
-Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
+// Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 
 route::get('/postlogin', 'loginController@postlogin')->name('postlogin');
 
-Route::get('/home', function () {
-    return view('home', [
-        'title'=> 'Home',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
-        et. Donec sit amet odio vitae elit ullamcorper tempus...",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ])->name('home');
-});
+// Route::get('/home', function () {
+//     return view('home', [
+//         'title'=> 'Home',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "Lorem ipsum dolor
+//         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+//         et. Donec sit amet odio vitae elit ullamcorper tempus...",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
 
 

@@ -108,15 +108,16 @@
                 bekasi</div>
         </div>
 
-        <form action="http://127.0.0.1:7070/api/auth-login" method="POST" enctype="application/x-www-form-urlencoded">
+        <form action="{{ route('loginApi') }}" method="POST" enctype="application/x-www-form-urlencoded">
+            @csrf
             <div class="mb-3">
                 <input type="text" name="email" id="email" autocomplete="email"
-                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Email">
+                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Email" required="">
             </div>
 
             <div class="mb-3">
                 <input type="password" name="password" id="password" autocomplete="password"
-                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Password">
+                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Password" required="">
             </div>
 
             <button
