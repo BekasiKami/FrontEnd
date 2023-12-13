@@ -144,7 +144,7 @@
                                     {{ $caption }}
                                 </div>
                                 {{-- <p>{{ $token }}</p> --}}
-                                <p>{{ $result['fullname']; }}</p>
+                                {{-- <p>{{ $result['fullname']; }}</p> --}}
                             </div>
                         </div>
                     </div>

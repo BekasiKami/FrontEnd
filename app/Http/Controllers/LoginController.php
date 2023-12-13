@@ -25,7 +25,7 @@ class LoginController extends Controller
         $password   = $request->password;
 
         try {
-            $response = $http->post('http://127.0.0.1:7070/api/auth-login', [
+            $response = $http->post('http://127.0.0.1:8001/api/auth-login', [
                 'form_params' => [
                     'email' => $email,
                     'password' => $password

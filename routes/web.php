@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
 Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
 // Contoh memberikan nama route
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
 //Logout clear token
 // Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
@@ -129,11 +131,11 @@ Route::get("/message-list", function () {
     ]);
 });
 
-Route::get("/profile", function () {
-    return view("profile", [
-        "title"=> "Profile",
-    ]);
-});
+// Route::get("/profile", function () {
+//     return view("profile", [
+//         "title"=> "Profile",
+//     ]);
+// });
 
 Route::get('/welcome', function () {
     return view('welcome');

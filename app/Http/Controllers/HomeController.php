@@ -20,7 +20,7 @@ class HomeController extends Controller
 
         // return dd($jwtToken);
         // Buat permintaan ke endpoint dengan menyertakan token
-        $response = $client->get('http://127.0.0.1:7070/api/user/get-User-By-Id?', [
+        $response = $client->get('http://127.0.0.1:8001/api/user/get-User-By-Id?', [
             'headers' => [
                 'xxx-token' => $jwtToken,
             ],

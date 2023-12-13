@@ -85,6 +85,7 @@
 </head>
 
 <body>
+    @include('partials.modal.modal-posting')
     {{-- Navbar --}}
     @include('partials.navbar')
     <main>
@@ -112,7 +113,8 @@
                             </div>
                         </div>
                         <div class="posted-image">
-                            <img class="w-[450px] h-[268px] rounded-[10px]" src="{{ $image }}" />
+                            <img class="w-[450px] h-[268px] rounded-[10px]" src="{{ $image }}" 
+                                onclick="showModal('{{$image}}')"/>
                         </div>
 
                         <div class="w-[133.75px] h-[60px] p-5 justify-start items-start gap-5 inline-flex">
@@ -197,6 +199,7 @@
     {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>
+    <script src="../js/post.js"></script>
 </body>
 {{-- End of Body --}}
 
