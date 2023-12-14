@@ -7,11 +7,11 @@
         onclick="closeModal()">&times;</a>
 
     <!-- A big image will be displayed here -->
-    <div class="bg-white w-min min-w-0 max-w-[1200px] h-auto max-h-[800px] inline-flex" id="posting">
-        <div class="h-[600px]">
-            <img id="modal-img" class="max-w-[800px] max-h-[600px]" />
+    <div class="bg-white w-min max-w-[1200px] h-auto max-h-[800px] inline-flex" id="posting">
+        <div class="h-[600px] mr-1 border-r border-gray-600 ">
+            <img id="modal-img" class="max-w-fit max-h-[600px]" />
         </div>
-        <div class="max-w-full h-[50px] mt-8 px-5">
+        <div class="w-[425px] max-w-full h-[50px] mt-8 px-5">
             <div class="justify-center items-center gap-5 inline-flex">
                 <img class="w-[30px] h-[30px] rounded-[250px] border border-zinc-600"
                     src="/assets/images/jessica.svg" />
