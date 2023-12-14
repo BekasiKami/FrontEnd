@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TrendingController;
+use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\EditProfileController;
+use App\Http\Controllers\ChangePasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +33,10 @@ Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
 // Contoh memberikan nama route
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
+Route::get('/trending', [TrendingController::class, 'trending'])->name('trending');
+Route::get('/notification', [NotificationController::class, 'notification'])->name('notification');
+Route::get('/editprofile', [EditProfileController::class, 'editprofile'])->name('editprofile');
+Route::get('/changepassword', [ChangePasswordController::class, 'changepassword'])->name('changepassword');
 //Logout clear token
 // Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
@@ -153,39 +161,39 @@ Route::get('/register2', function () {
     return view('register2');
 });
 
-Route::get('/trending', function () {
-    return view('trending', [
-        'title' => 'Trending',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "assets/images/image-post1.svg",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
-        et. Donec sit amet odio vitae elit ullamcorper tempus...",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ]);
-});
+// Route::get('/trending', function () {
+//     return view('trending', [
+//         'title' => 'Trending',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "assets/images/image-post1.svg",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "Lorem ipsum dolor
+//         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+//         et. Donec sit amet odio vitae elit ullamcorper tempus...",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
-Route::get('/notification', function () {
-    return view('notification', [
-        'title'=> 'Notification',
-        'nama' => 'sirkoping_',
-        'nama2' => 'daydream',
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "profile_image2" => "assets/images/putri-kecil-brocklesnar.png",
-    ]);
-});
+// Route::get('/notification', function () {
+//     return view('notification', [
+//         'title'=> 'Notification',
+//         'nama' => 'sirkoping_',
+//         'nama2' => 'daydream',
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "profile_image2" => "assets/images/putri-kecil-brocklesnar.png",
+//     ]);
+// });
 
-Route::get('/editprofile', function () {
-    return view('editprofile', [
-        'title'=> 'Edit Profile',
-    ]);
-});
+// Route::get('/editprofile', function () {
+//     return view('editprofile', [
+//         'title'=> 'Edit Profile',
+//     ]);
+// });
 
-Route::get('/changepassword', function () {
-    return view('gantipass', [
-        'title'=> 'Ubah Password',
-    ]);
-});
+// Route::get('/changepassword', function () {
+//     return view('gantipass', [
+//         'title'=> 'Ubah Password',
+//     ]);
+// });

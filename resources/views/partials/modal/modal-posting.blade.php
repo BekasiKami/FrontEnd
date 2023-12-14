@@ -7,8 +7,10 @@
         onclick="closeModal()">&times;</a>
 
     <!-- A big image will be displayed here -->
-    <div class="bg-white w-[1200px] h-auto inline-flex" id="posting">
-        <img id="modal-img" class="max-w-[800px] max-h-[600px]" />
+    <div class="bg-white w-min min-w-0 max-w-[1200px] h-auto max-h-[800px] inline-flex" id="posting">
+        <div class="h-[600px]">
+            <img id="modal-img" class="max-w-[800px] max-h-[600px]" />
+        </div>
         <div class="max-w-full h-[50px] mt-8 px-5">
             <div class="justify-center items-center gap-5 inline-flex">
                 <img class="w-[30px] h-[30px] rounded-[250px] border border-zinc-600"
@@ -22,7 +24,7 @@
                     </p>
                 </div>
                 <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal"
-                    class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50"
+                    class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50"
                     type="button">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         viewBox="0 0 16 3">
@@ -37,20 +39,16 @@
             <!-- Dropdown menu -->
             <div id="dropdownDotsHorizontal"
                 class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                <ul class="py-2 text-sm text-gray-700"
-                    aria-labelledby="dropdownMenuIconHorizontalButton">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownMenuIconHorizontalButton">
                     <li>
-                        <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100">Tambah
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tambah
                             ke simpan</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100">Laporkan</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Laporkan</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block px-4 py-2 hover:bg-gray-100">Sembunyikan
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sembunyikan
                             postingan</a>
                     </li>
                 </ul>

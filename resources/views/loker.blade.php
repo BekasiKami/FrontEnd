@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @include('partials.head')
+    @include('partials.modal.modal-posting')
 </head>
 {{-- End of Head --}}
 
@@ -20,7 +21,37 @@
     @include('partials.category')
     {{-- Trending --}}
     @include('partials.trending')
+
+
     {{-- Home Content --}}
+    @if (session()->has('token'))
+        {{-- <p>Your token: {{ session('token') }}</p> --}}
+        <script>
+            // Save the token to session storage
+            sessionStorage.setItem('token', '{{ session('token') }}');
+        </script>
+    @else
+        <p>No token available.</p>
+    @endif
+
+    <script>
+        // Retrieve the token from session storage
+        const jwtToken = sessionStorage.getItem('token');
+
+        // Check if the token is available
+        if (jwtToken) {
+            // Add the token to the headers (JavaScript)
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#xxx-token').setAttribute('value', jwtToken);
+            });
+        } else {
+            console.error('JWT token not found in session storage.');
+        }
+    </script>
+
+    {{-- Wajib ada di dalam form post,edit --}}
+    {{-- <input type="hidden" id="xxx-token" value=""> --}}
+
     <main>
         {{-- <div class="container mx-auto max-mobile:mx-auto mt-20"> --}}
         <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
@@ -58,7 +89,8 @@
                                         aria-labelledby="dropdownMenuIconHorizontalButton">
                                         <li>
                                             <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah ke simpan</a>
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah
+                                                ke simpan</a>
                                         </li>
                                         <li>
                                             <a href="#"
@@ -66,7 +98,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan postingan</a>
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan
+                                                postingan</a>
                                         </li>
                                     </ul>
                                     {{-- <div class="py-2">
@@ -80,7 +113,8 @@
                         </div>
                         <div class="post">
                             <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto"
-                                src="{{ $image }}" />
+                                src="{{ $image }}"
+                                onclick="showModal('{{$image}}')"/>
                             {{-- <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" /> --}}
                         </div>
@@ -111,6 +145,8 @@
                             <div class="w-auto text-zinc-700 text-sm font-normal">
                                 {{ $caption }}
                             </div>
+                            {{-- <p>{{ $token }}</p> --}}
+                            {{-- <p>{{ $result['fullname']; }}</p> --}}
                         </div>
                     </div>
                 </div>
@@ -120,6 +156,7 @@
     {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>
+    <script src="../js/post.js"></script>
 </body>
 {{-- End of Body --}}
 

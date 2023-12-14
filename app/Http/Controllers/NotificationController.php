@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
-class ProfileController extends Controller
+class NotificationController extends Controller
 {
-    public function profile(Request $request)
+    public function notification(Request $request)
     {
         // Ambil token dari session
         $jwtToken = session('token');
@@ -30,9 +30,13 @@ class ProfileController extends Controller
         $userData = json_decode($response->getBody(), true);
 
         // Kirimkan data ke view
-        // return view('profile', $viewData);
-        return view('profile', [
-            'title' => 'Profile',
+        // return view('notification', $viewData);
+        return view('notification', [
+            'title'=> 'Notification',
+            'nama' => 'sirkoping_',
+            'nama2' => 'daydream',
+            "profile_image" => "assets/images/silverash-profile.svg",
+            "profile_image2" => "assets/images/putri-kecil-brocklesnar.png",
             'token' => $tokenValue,
             'result' => $userData, // Data dari API
         ]);

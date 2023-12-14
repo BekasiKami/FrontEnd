@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
-class ProfileController extends Controller
+class ChangePasswordController extends Controller
 {
-    public function profile(Request $request)
+    public function changepassword(Request $request)
     {
         // Ambil token dari session
         $jwtToken = session('token');
@@ -29,10 +29,11 @@ class ProfileController extends Controller
         // Ambil konten respons sebagai array
         $userData = json_decode($response->getBody(), true);
 
+
         // Kirimkan data ke view
-        // return view('profile', $viewData);
-        return view('profile', [
-            'title' => 'Profile',
+        // return view('changepassword', $viewData);
+        return view('gantipass', [
+            'title'=> 'Ubah Password',
             'token' => $tokenValue,
             'result' => $userData, // Data dari API
         ]);

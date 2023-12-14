@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 
-class ProfileController extends Controller
+class EditProfileController extends Controller
 {
-    public function profile(Request $request)
+    public function editprofile(Request $request)
     {
         // Ambil token dari session
         $jwtToken = session('token');
@@ -29,12 +29,11 @@ class ProfileController extends Controller
         // Ambil konten respons sebagai array
         $userData = json_decode($response->getBody(), true);
 
+
         // Kirimkan data ke view
-        // return view('profile', $viewData);
-        return view('profile', [
-            'title' => 'Profile',
-            'token' => $tokenValue,
-            'result' => $userData, // Data dari API
+        // return view('editprofile', $viewData);
+        return view('editprofile', [
+            'title'=> 'Edit Profile',
         ]);
     }
 }

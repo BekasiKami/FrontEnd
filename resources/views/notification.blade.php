@@ -8,6 +8,32 @@
 <body>
     @include('partials.navbar')
 
+    {{-- VERIF AKUN --}}
+    @if (session()->has('token'))
+            {{-- <p>Your token: {{ session('token') }}</p> --}}
+            <script>
+                // Save the token to session storage
+                sessionStorage.setItem('token', '{{ session('token') }}');
+            </script>
+        @else
+            <p>No token available.</p>
+        @endif
+
+        <script>
+            // Retrieve the token from session storage
+            const jwtToken = sessionStorage.getItem('token');
+
+            // Check if the token is available
+            if (jwtToken) {
+                // Add the token to the headers (JavaScript)
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelector('#xxx-token').setAttribute('value', jwtToken);
+                });
+            } else {
+                console.error('JWT token not found in session storage.');
+            }
+        </script>
+
     <main>
         <div class="container mt-3 mx-auto">
             <section class="notification-wrapper max-w-[500px] mx-auto my-auto">
