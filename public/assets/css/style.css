@@ -1546,6 +1546,14 @@ select {
   width: 425px;
 }
 
+.w-\[427px\] {
+  width: 427px;
+}
+
+.w-\[428px\] {
+  width: 428px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }

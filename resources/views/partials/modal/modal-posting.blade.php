@@ -11,7 +11,7 @@
         <div class="h-[600px] mr-1 border-r border-gray-600 ">
             <img id="modal-img" class="max-w-fit max-h-[600px]" />
         </div>
-        <div class="w-[425px] max-w-full h-[50px] mt-8 px-5">
+        <div class="w-[428px] max-w-full h-[50px] mt-8 px-5">
             <div class="justify-center items-center gap-5 inline-flex">
                 <img class="w-[30px] h-[30px] rounded-[250px] border border-zinc-600"
                     src="/assets/images/jessica.svg" />
