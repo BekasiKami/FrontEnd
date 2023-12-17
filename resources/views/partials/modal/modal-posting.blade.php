@@ -7,7 +7,7 @@
         onclick="closeModal()">&times;</a>
 
     <!-- A big image will be displayed here -->
-    <div class="bg-white w-min max-w-[1200px] h-auto max-h-[800px] inline-flex" id="posting">
+    <div class="bg-white w-min max-w-[1250px] h-auto max-h-[800px] inline-flex" id="posting">
         <div class="h-[600px] mr-1 border-r border-gray-600 ">
             <img id="modal-img" class="max-w-fit max-h-[600px]" />
         </div>

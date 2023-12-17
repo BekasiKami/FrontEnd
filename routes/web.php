@@ -87,7 +87,7 @@ Route::get('/event', function () {
         'title'=> 'Event',
         "username" => "Fatih",
         "post_time" => "Recenly",
-        "image" => "assets/images/dummy/event.jpg",
+        "image" => "assets/images/dummy/event2.jpg",
         "profile_image" => "assets/images/silverash-profile.svg",
         "caption" => "Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @include('partials.head')
+    @include('partials.modal.modal-posting')
 </head>
 {{-- End of Head --}}
 
@@ -80,7 +81,8 @@
                         </div>
                         <div class="post">
                             <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto"
-                                src="{{ $image }}" />
+                                src="{{ $image }}"
+                                onclick="showModal('{{$image}}')" />
                             {{-- <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" /> --}}
                         </div>
@@ -120,6 +122,7 @@
     {{-- End Content --}}
 
     <script src="assets/js/app.js"></script>
+    <script src="../js/post.js"></script>
 </body>
 {{-- End of Body --}}
 
