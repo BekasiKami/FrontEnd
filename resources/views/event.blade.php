@@ -15,6 +15,32 @@
 {{-- Body Section --}}
 
 <body>
+    {{-- MEMASTIKAN AKUN PENGGUNA --}}
+    @if (session()->has('token'))
+        {{-- <p>Your token: {{ session('token') }}</p> --}}
+        <script>
+            // Save the token to session storage
+            sessionStorage.setItem('token', '{{ session('token') }}');
+        </script>
+    @else
+        <p>No token available.</p>
+    @endif
+
+    <script>
+        // Retrieve the token from session storage
+        const jwtToken = sessionStorage.getItem('token');
+
+        // Check if the token is available
+        if (jwtToken) {
+            // Add the token to the headers (JavaScript)
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#xxx-token').setAttribute('value', jwtToken);
+            });
+        } else {
+            console.error('JWT token not found in session storage.');
+        }
+    </script>
+
     {{-- Navbar --}}
     @include('partials.navbar')
     {{-- Home Category --}}
@@ -59,7 +85,8 @@
                                         aria-labelledby="dropdownMenuIconHorizontalButton">
                                         <li>
                                             <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah ke simpan</a>
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tambah
+                                                ke simpan</a>
                                         </li>
                                         <li>
                                             <a href="#"
@@ -67,7 +94,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan postingan</a>
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sembunyikan
+                                                postingan</a>
                                         </li>
                                     </ul>
                                     {{-- <div class="py-2">
@@ -81,8 +109,7 @@
                         </div>
                         <div class="post">
                             <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-auto"
-                                src="{{ $image }}"
-                                onclick="showModal('{{$image}}')" />
+                                src="{{ $image }}" onclick="showModal('{{ $image }}')" />
                             {{-- <img class="md:w-[450px] max-mobile:w-[450px] mobile:w-full h-[268px]"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" /> --}}
                         </div>

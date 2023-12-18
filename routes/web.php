@@ -9,6 +9,10 @@ use App\Http\Controllers\TrendingController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\EditProfileController;
 use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\LokerController;
+use App\Http\Controllers\WisataController;
+use App\Http\Controllers\KulinerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +36,10 @@ Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
 Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
 // Contoh memberikan nama route
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/loker', [LokerController::class, 'loker'])->name('loker');
+Route::get('/event', [EventController::class, 'event'])->name('event');
+Route::get('/wisata', [WisataController::class, 'wisata'])->name('wisata');
+Route::get('/kuliner', [KulinerController::class, 'kuliner'])->name('kuliner');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
 Route::get('/trending', [TrendingController::class, 'trending'])->name('trending');
 Route::get('/notification', [NotificationController::class, 'notification'])->name('notification');
@@ -61,71 +69,71 @@ route::get('/postlogin', 'loginController@postlogin')->name('postlogin');
 
 
 
-Route::get('/loker', function () {
-    return view('loker', [
-        'title'=> 'Loker',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "assets/images/dummy/loker.jpg",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "[LOKER BOGOR KOTA] Terupdate dan Terpercaya
-        Bagikan info lowongan kerja ini kepada keluarga, teman, sahabat, dan orang yang membutuhkan info lowongan pekerjaan
-        PERHATIKAN :
-        - Untuk info lebih lanjut, silakan hubungi kontak atau langsung datang ke alamat yang tertera
-        - Hindari dan laporkan ke admin jika ada lowongan pekerjaan dengan modus Travel /penggantian biaya akomodasi selama test berlangsung
-        - Hindari memberikan sejumlah uang/transfer kepada pihak tertentu yang mengatasnamakan perusahaan
-        - Cek selalu Website resmi perusahaan tersebut
-        - Waspada terhadap lowongan pekerjaan penipuan seperti MLM atau sejenisnya dengan imbalan Gaji besar
-        - Silahkan DM kepada admin kami jika dirasa lowongan pekerjaan yang kami posting tersebut mencurigakan",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ]);
-});
+// Route::get('/loker', function () {
+//     return view('loker', [
+//         'title'=> 'Loker',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "assets/images/dummy/loker.jpg",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "[LOKER BOGOR KOTA] Terupdate dan Terpercaya
+//         Bagikan info lowongan kerja ini kepada keluarga, teman, sahabat, dan orang yang membutuhkan info lowongan pekerjaan
+//         PERHATIKAN :
+//         - Untuk info lebih lanjut, silakan hubungi kontak atau langsung datang ke alamat yang tertera
+//         - Hindari dan laporkan ke admin jika ada lowongan pekerjaan dengan modus Travel /penggantian biaya akomodasi selama test berlangsung
+//         - Hindari memberikan sejumlah uang/transfer kepada pihak tertentu yang mengatasnamakan perusahaan
+//         - Cek selalu Website resmi perusahaan tersebut
+//         - Waspada terhadap lowongan pekerjaan penipuan seperti MLM atau sejenisnya dengan imbalan Gaji besar
+//         - Silahkan DM kepada admin kami jika dirasa lowongan pekerjaan yang kami posting tersebut mencurigakan",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
-Route::get('/event', function () {
-    return view('event', [
-        'title'=> 'Event',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "assets/images/dummy/event2.jpg",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
-        et. Donec sit amet odio vitae elit ullamcorper tempus...",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ]);
-});
+// Route::get('/event', function () {
+//     return view('event', [
+//         'title'=> 'Event',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "assets/images/dummy/event2.jpg",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "Lorem ipsum dolor
+//         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+//         et. Donec sit amet odio vitae elit ullamcorper tempus...",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
-Route::get('/wisata', function () {
-    return view('wisata', [
-        'title'=> 'Wisata',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "assets/images/dummy/mlm.png",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
-        et. Donec sit amet odio vitae elit ullamcorper tempus...",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ]);
-});
+// Route::get('/wisata', function () {
+//     return view('wisata', [
+//         'title'=> 'Wisata',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "assets/images/dummy/mlm.png",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "Lorem ipsum dolor
+//         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+//         et. Donec sit amet odio vitae elit ullamcorper tempus...",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
-Route::get('/kuliner', function () {
-    return view('kuliner', [
-        'title'=> 'Kuliner',
-        "username" => "Fatih",
-        "post_time" => "Recenly",
-        "image" => "assets/images/dummy/geprek.jpg",
-        "profile_image" => "assets/images/silverash-profile.svg",
-        "caption" => "Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
-        et. Donec sit amet odio vitae elit ullamcorper tempus...",
-        "upvotes"=> "20 Upvotes",
-        "comments"=> "3 Comments",
-    ]);
-});
+// Route::get('/kuliner', function () {
+//     return view('kuliner', [
+//         'title'=> 'Kuliner',
+//         "username" => "Fatih",
+//         "post_time" => "Recenly",
+//         "image" => "assets/images/dummy/geprek.jpg",
+//         "profile_image" => "assets/images/silverash-profile.svg",
+//         "caption" => "Lorem ipsum dolor
+//         sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend
+//         et. Donec sit amet odio vitae elit ullamcorper tempus...",
+//         "upvotes"=> "20 Upvotes",
+//         "comments"=> "3 Comments",
+//     ]);
+// });
 
 Route::get("/search", function () {
     return view("search", [
