@@ -35,7 +35,7 @@ class HomeController extends Controller
         //     $fullname = 'Default Fullname'; // Atau atur nilai default lainnya
         // }
 
-        // return dd($fullname);
+        // return dd($userData['user']['fullname']);
 
 
         // Data untuk dikirimkan ke view
