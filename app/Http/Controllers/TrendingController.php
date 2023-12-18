@@ -36,7 +36,7 @@ class TrendingController extends Controller
             'title' => 'Trending',
             "username" => "Fatih",
             "post_time" => "Recenly",
-            "image" => "assets/images/image-post1.svg",
+            "image" => "assets/images/dummy/wrc.jpg",
             "profile_image" => "assets/images/silverash-profile.svg",
             "caption" => "Lorem ipsum dolor
             sit amet, consectetur adipiscing elit. Ut commodo sem diam, vel malesuada est eleifend

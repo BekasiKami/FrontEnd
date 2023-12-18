@@ -18,9 +18,9 @@
     {{-- Navbar --}}
     @include('partials.navbar')
     {{-- Home Category --}}
-    @include('partials.category')
+    {{-- @include('partials.category') --}}
     {{-- Trending --}}
-    @include('partials.trending')
+    {{-- @include('partials.trending') --}}
 
 
     {{-- Home Content --}}
@@ -54,7 +54,7 @@
 
     <main>
         {{-- <div class="container mx-auto max-mobile:mx-auto mt-20"> --}}
-        <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
+        <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full mt-20">
             <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                 <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
                     <div class="">
