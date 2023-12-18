@@ -16,39 +16,42 @@
     @include('partials.navbar')
     @include('partials.sidebar')
 
-    {{-- VERIF AKUN --}}
+    {{-- TOKEN CHECK --}}
     @if (session()->has('token'))
-            {{-- <p>Your token: {{ session('token') }}</p> --}}
-            <script>
-                // Save the token to session storage
-                sessionStorage.setItem('token', '{{ session('token') }}');
-            </script>
-        @else
-            <p>No token available.</p>
-        @endif
-
+        {{-- <p>Your token: {{ session('token') }}</p> --}}
         <script>
-            // Retrieve the token from session storage
-            const jwtToken = sessionStorage.getItem('token');
-
-            // Check if the token is available
-            if (jwtToken) {
-                // Add the token to the headers (JavaScript)
-                document.addEventListener('DOMContentLoaded', function() {
-                    document.querySelector('#xxx-token').setAttribute('value', jwtToken);
-                });
-            } else {
-                console.error('JWT token not found in session storage.');
-            }
+            // Save the token to session storage
+            sessionStorage.setItem('token', '{{ session('token') }}');
         </script>
-        
+    @else
+        <p>No token available.</p>
+    @endif
+    {{-- END TOKEN CHECK --}}
+
+    {{-- TOKEN STORAGE SCRIPT --}}
+    <script>
+        // Retrieve the token from session storage
+        const jwtToken = sessionStorage.getItem('token');
+
+        // Check if the token is available
+        if (jwtToken) {
+            // Add the token to the headers (JavaScript)
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#xxx-token').setAttribute('value', jwtToken);
+            });
+        } else {
+            console.error('JWT token not found in session storage.');
+        }
+    </script>
+    {{-- END TOKEN STORAGE SCRIPT --}}
+
     <main>
         <div class="container max-w-5xl pt-36">
 
             {{-- sidebar kiri --}}
             @include('partials.editbar')
 
-            
+
             {{-- <div class="edit-profile-wrapper max-w-[500px]  ml-[380px]">
                 <div class="back-to-userprofile">
                     <span class="text-[rgba(69,69,69,1)] text-xl font-bold ml-[5px]">Edit profile</span>
@@ -100,34 +103,72 @@
                     <div class="edit-header grid grid-cols-[1fr] mb-5">
                         <img class="w-[100px] h-[100px] mx-auto mb-3" src="assets/images/jessica.svg" alt="" />
                         <div class="edit-profile-description text-center">
-                            <h4 class="text-xl font-normal text-[rgba(69,69,69,1)]">Jessica_</h4>
-                            <button class="text-blue-600 font-bold bg-transparent text-base border-0">Edit foto profil</button>
+                            <h4 class="text-xl font-normal text-[rgba(69,69,69,1)]">{{ $result['user']['username'] }}
+                            </h4>
+                            {{-- <button class="text-blue-600 font-bold bg-transparent text-base border-0">Edit foto
+                                profil</button> --}}
                         </div>
                     </div>
-            
-                    <form>
+
+                    <form id="editProfileForm">
                         <div class="mb-6">
-                            <label for="username" class="text-black text-base font-normal font-poppins leading-normal">Username</label>
-                            <input type="text" id="username" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Username">
+                            <label for="username"
+                                class="text-black text-base font-normal font-poppins leading-normal">Username</label>
+                            <input type="text" id="username" name="username"
+                                class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins"
+                                value="{{ $result['user']['username'] }}">
                         </div>
                         <div class="mb-6">
-                            <label for="name" class="text-black text-base font-normal font-poppins leading-normal">Nama</label>
-                            <input type="text" id="name" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Nama">
+                            <label for="name"
+                                class="text-black text-base font-normal font-poppins leading-normal">Nama</label>
+                            <input type="text" id="name" name="fullname"
+                                class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins"
+                                value="{{ $result['user']['fullname'] }}">
                         </div>
                         <div class="mb-6">
-                            <label for="email" class="text-black text-base font-normal font-poppins leading-normal">Email</label>
-                            <input type="email" id="email" class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins" placeholder="Email">
+                            <label for="email"
+                                class="text-black text-base font-normal font-poppins leading-normal">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-5 py-2.5 bg-white rounded-lg border border-zinc-700 text-zinc-800 text-xs font-normal font-poppins"
+                                readonly disabled value="{{ $result['user']['email'] }}">
                         </div>
+                        {{-- Hidden Gems --}}
+                        <input type="text" id="description" name="description" value="desc">
+                        <input type="text" id="phone" name="phone" value="000000000000">
                         <div class="ml-auto">
-                            <button type="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Simpan</button>
+                            <button type="submit"
+                                class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Simpan</button>
                         </div>
                     </form>
                 </div>
             </div>
-            
-            
+
+
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('editProfileForm').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/user/update-data-profile',
+                    data: $('form').serialize(),
+                    success: function(response) {
+                        alert(response.message); // Show success message
+                        // Handle other actions if needed
+                    },
+                    error: function(error) {
+                        alert('Failed to update profile'); // Show error message
+                        // Handle other error actions if needed
+                    }
+                });
+            });
+        });
+    </script>
 
     {{-- <script src="../js/app.js"></script> --}}
 </body>

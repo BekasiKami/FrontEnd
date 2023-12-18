@@ -22,8 +22,7 @@
         {{-- Trending --}}
         @include('partials.trending')
 
-
-        {{-- Home Content --}}
+        {{-- TOKEN CHECK --}}
         @if (session()->has('token'))
             {{-- <p>Your token: {{ session('token') }}</p> --}}
             <script>
@@ -33,7 +32,9 @@
         @else
             <p>No token available.</p>
         @endif
+        {{-- END TOKEN CHECK --}}
 
+        {{-- TOKEN STORAGE SCRIPT --}}
         <script>
             // Retrieve the token from session storage
             const jwtToken = sessionStorage.getItem('token');
@@ -48,10 +49,12 @@
                 console.error('JWT token not found in session storage.');
             }
         </script>
+        {{-- END TOKEN STORAGE SCRIPT --}}
 
         {{-- Wajib ada di dalam form post,edit --}}
         {{-- <input type="hidden" id="xxx-token" value=""> --}}
 
+        {{-- Home Content --}}
         <main>
             {{-- <div class="container mx-auto max-mobile:mx-auto mt-20"> --}}
             <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">

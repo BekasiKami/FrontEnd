@@ -41,6 +41,8 @@ Route::get('/changepassword', [ChangePasswordController::class, 'changepassword'
 // Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+// Update Profile
+Route::post('/update-data-profile', [UserController::class, 'updateProfile'])->name('update.profile');
 
 route::get('/postlogin', 'loginController@postlogin')->name('postlogin');
 
