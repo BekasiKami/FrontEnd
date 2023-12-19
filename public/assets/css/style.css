@@ -904,6 +904,10 @@ select {
   top: 8rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1277,28 +1281,6 @@ select {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-fit {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-.max-h-min {
-  max-height: -moz-min-content;
-  max-height: min-content;
-}
-
-.max-h-\[50px\] {
-  max-height: 50px;
-}
-
-.max-h-\[100px\] {
-  max-height: 100px;
-}
-
-.max-h-\[200px\] {
-  max-height: 200px;
 }
 
 .min-h-fit {

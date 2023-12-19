@@ -9,10 +9,6 @@ use App\Http\Controllers\TrendingController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\EditProfileController;
 use App\Http\Controllers\ChangePasswordController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\LokerController;
-use App\Http\Controllers\WisataController;
-use App\Http\Controllers\KulinerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,10 +32,6 @@ Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
 Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
 // Contoh memberikan nama route
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/loker', [LokerController::class, 'loker'])->name('loker');
-Route::get('/event', [EventController::class, 'event'])->name('event');
-Route::get('/wisata', [WisataController::class, 'wisata'])->name('wisata');
-Route::get('/kuliner', [KulinerController::class, 'kuliner'])->name('kuliner');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
 Route::get('/trending', [TrendingController::class, 'trending'])->name('trending');
 Route::get('/notification', [NotificationController::class, 'notification'])->name('notification');
