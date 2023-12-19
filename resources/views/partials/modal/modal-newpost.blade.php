@@ -23,11 +23,12 @@
             <!-- Modal body -->
             <div class="p-3">
 
-                <form>
+                <form enctype="multipart/form-data" action="{{ route('newPost') }}" method="POST">
+                    @csrf
                     <div class="flex items-center justify-center w-full">
                         <div id="image-preview"
                             class="max-w-sm p-6 mb-4 bg-gray-100 border-dashed border-2 border-gray-400 rounded-lg items-center mx-auto text-center cursor-pointer">
-                            <input id="upload" type="file" class="hidden" accept="image/*" />
+                            <input id="upload" type="file" class="hidden" accept="image/*" name="imagePosts" />
                             <label for="upload" class="cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-700 mx-auto mb-4">
@@ -43,74 +44,72 @@
                             </label>
                         </div>
                     </div>
-                    <div
-                        class="mt-5 w-full mb-4 border border-gray-200 rounded-lg bg-gray-50">
+                    <div class="mt-5 w-full mb-4 border border-gray-200 rounded-lg bg-gray-50">
                         <div class="px-4 py-2 bg-white rounded-t-lg">
                             <label for="comment" class="sr-only">Your post</label>
-                            <textarea id="comment" rows="4"
-                                class="w-full px-0 text-sm text-gray-900 bg-white border-0 focus:ring-0"
-                                placeholder="Write something..." required></textarea>
+                            <textarea id="comment" rows="4" name="comment"
+                                class="w-full px-0 text-sm text-gray-900 bg-white border-0 focus:ring-0" placeholder="Write something..." required></textarea>
                         </div>
+                        {{-- <input type="text" class="hidden" value=""> --}}
                     </div>
+                    <div class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b">
+                      <button data-modal-hide="modal-posting" type="submit"
+                          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Posting</button>
+                      {{-- <button data-modal-hide="modal-posting" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> --}}
+                  </div>
                 </form>
             </div>
             <!-- Modal footer -->
-            <div
-                class="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b">
-                <button data-modal-hide="modal-posting" type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Posting</button>
-                {{-- <button data-modal-hide="modal-posting" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> --}}
-            </div>
         </div>
     </div>
 </div>
-  
-  <script>
+
+<script>
     const uploadInput = document.getElementById('upload');
     const filenameLabel = document.getElementById('filename');
     const imagePreview = document.getElementById('image-preview');
-  
+
     // Check if the event listener has been added before
     let isEventListenerAdded = false;
-  
+
     uploadInput.addEventListener('change', (event) => {
-      const file = event.target.files[0];
-  
-      if (file) {
-        filenameLabel.textContent = file.name;
-  
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          imagePreview.innerHTML =
-            `<img src="${e.target.result}" class="max-h-48 rounded-lg mx-auto" alt="Image preview" />`;
-          imagePreview.classList.remove('border-dashed', 'border-2', 'border-gray-400');
-  
-          // Add event listener for image preview only once
-          if (!isEventListenerAdded) {
-            imagePreview.addEventListener('click', () => {
-              uploadInput.click();
+        const file = event.target.files[0];
+
+        if (file) {
+            filenameLabel.textContent = file.name;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.innerHTML =
+                    `<img src="${e.target.result}" class="max-h-48 rounded-lg mx-auto" alt="Image preview" />`;
+                imagePreview.classList.remove('border-dashed', 'border-2', 'border-gray-400');
+
+                // Add event listener for image preview only once
+                if (!isEventListenerAdded) {
+                    imagePreview.addEventListener('click', () => {
+                        uploadInput.click();
+                    });
+
+                    isEventListenerAdded = true;
+                }
+            };
+            reader.readAsDataURL(file);
+        } else {
+            filenameLabel.textContent = '';
+            imagePreview.innerHTML =
+                `<div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500">No image preview</div>`;
+            imagePreview.classList.add('border-dashed', 'border-2', 'border-gray-400');
+
+            // Remove the event listener when there's no image
+            imagePreview.removeEventListener('click', () => {
+                uploadInput.click();
             });
-  
-            isEventListenerAdded = true;
-          }
-        };
-        reader.readAsDataURL(file);
-      } else {
-        filenameLabel.textContent = '';
-        imagePreview.innerHTML =
-          `<div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500">No image preview</div>`;
-        imagePreview.classList.add('border-dashed', 'border-2', 'border-gray-400');
-  
-        // Remove the event listener when there's no image
-        imagePreview.removeEventListener('click', () => {
-          uploadInput.click();
-        });
-  
-        isEventListenerAdded = false;
-      }
+
+            isEventListenerAdded = false;
+        }
     });
-  
+
     uploadInput.addEventListener('click', (event) => {
-      event.stopPropagation();
+        event.stopPropagation();
     });
-  </script>
+</script>
