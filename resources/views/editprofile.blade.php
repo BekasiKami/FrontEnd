@@ -110,7 +110,9 @@
                         </div>
                     </div>
 
-                    <form id="editProfileForm">
+                    <form action="{{ route('updateProfile') }}" method="POST">
+                        @csrf
+                        @method('PUT')
                         <div class="mb-6">
                             <label for="username"
                                 class="text-black text-base font-normal font-poppins leading-normal">Username</label>
@@ -133,8 +135,10 @@
                                 readonly disabled value="{{ $result['user']['email'] }}">
                         </div>
                         {{-- Hidden Gems --}}
-                        <input type="text" id="description" name="description" value="desc">
-                        <input type="text" id="phone" name="phone" value="000000000000">
+                        <input type="text" id="description" name="description" value="desc" class="hidden" readonly
+                            disabled>
+                        <input type="text" id="phone" name="phone" value="000000000000" class="hidden" readonly
+                            disabled>
                         <div class="ml-auto">
                             <button type="submit"
                                 class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Simpan</button>
@@ -148,7 +152,7 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
+    {{-- <script>
         $(document).ready(function() {
             $('editProfileForm').submit(function(e) {
                 e.preventDefault();
@@ -168,7 +172,7 @@
                 });
             });
         });
-    </script>
+    </script> --}}
 
     {{-- <script src="../js/app.js"></script> --}}
 </body>

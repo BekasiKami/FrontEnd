@@ -36,6 +36,7 @@ Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
 Route::get('/trending', [TrendingController::class, 'trending'])->name('trending');
 Route::get('/notification', [NotificationController::class, 'notification'])->name('notification');
 Route::get('/editprofile', [EditProfileController::class, 'editprofile'])->name('editprofile');
+Route::match(['post', 'put'], '/updateProfile', [EditProfileController::class, 'updateProfile'])->name('updateProfile');
 Route::get('/changepassword', [ChangePasswordController::class, 'changepassword'])->name('changepassword');
 //Logout clear token
 // Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');

@@ -27,7 +27,7 @@ class LoginController extends Controller
         try {
             $response = $http->post('http://127.0.0.1:8001/api/auth-login', [
                 'form_params' => [
-                    'email' => $email,
+                    'email' => $email, 
                     'password' => $password
                 ]
             ]);
@@ -48,7 +48,7 @@ class LoginController extends Controller
             // Handle exception, e.g., log the error or return a custom response
             $response = $e->getResponse();
             $result = json_decode((string)$response->getBody(), true);
-            return dd($result);
+            // return dd($result);
             return redirect()->back()->with('error', 'login fail, Please Try Again');
         }
     }

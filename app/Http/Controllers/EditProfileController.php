@@ -11,7 +11,7 @@ class EditProfileController extends Controller
     // {
     //     // Ambil token dari session
     //     $jwtToken = session('token');
-        
+
     //     // Token value
     //     $tokenValue = $jwtToken;
 
@@ -25,7 +25,7 @@ class EditProfileController extends Controller
     //             'xxx-token' => $jwtToken,
     //         ],
     //     ]);
-        
+
     //     // Ambil konten respons sebagai array
     //     $userData = json_decode($response->getBody(), true);
 
@@ -41,7 +41,7 @@ class EditProfileController extends Controller
     {
         // Ambil token dari session
         $jwtToken = session('token');
-        
+
         // Token value
         $tokenValue = $jwtToken;
 
@@ -61,7 +61,7 @@ class EditProfileController extends Controller
         //         'xxx-token' => $jwtToken,
         //     ],
         // ]);
-        
+
         // Ambil konten respons sebagai array
         $userData = json_decode($response->getBody(), true);
         // $postData = json_decode($posting->getBody(), true);
@@ -86,27 +86,47 @@ class EditProfileController extends Controller
     {
         // Ambil token dari session
         $jwtToken = session('token');
-        
+
         // Token value
         $tokenValue = $jwtToken;
 
-        $client = new Client();
-        $response = $client->put('http://127.0.0.1:8001/api/user/update-data-profile', [
-            'headers' => [
-                'xxx-token' => $jwtToken,
-            ],
-            'username' => $request->input('username'),
-            'fullname' => $request->input('fullname'),
+        $requestData = [
+            'user'        => $request->input('username'),
+            'fullname'    => $request->input('fullname'),
+            'description' => $request->input('description'),
+            'phone'       => $request->input('phone'),
             // Add other fields as needed
-        ]);
+        ];
 
-        // Handle the response from the API
-        $apiResponse = $response->json(); // Assuming the API returns JSON
+        $client = new Client();
+        try {
+            $response = $client->put('http://127.0.0.1:8001/api/user/update-data-profile', [
+                'headers' => [
+                    'xxx-token' => $jwtToken,
+                ],
+                'json' => $requestData,
+            ]);
 
-        // Process the API response and return a response to the client
-        // ...
+            $result = json_decode($response->getBody(), true);
+            // $result = json_decode((string)$response->getBody(), true);
 
-        // Example: Return a success message
-        return response()->json(['message' => 'Profile updated successfully']);
+            // Check if the API request was successful
+            if ($response->getStatusCode() === 200) {
+                // Redirect to the 'editprofile' view
+                return redirect()->route('editprofile')->with('success', 'Profile updated successfully');
+            } else {
+                // Handle errors, e.g., display an error message
+                return redirect()->route('editprofile')->with('error', 'Failed to update profile');
+            }
+
+        } catch (\GuzzleHttp\Exception\ClientException $e) {
+            // Handle exception, e.g., log the error or return a custom response
+            $response = $e->getResponse();
+            $result = json_decode((string)$response->getBody(), true);
+            // return dd($result);
+            return redirect()->back()->with('error', 'Edit Profile Failed, Please Try Again');
+        }
+
+        return redirect()->route('editprofile');
     }
 }

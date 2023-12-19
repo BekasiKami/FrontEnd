@@ -880,8 +880,8 @@ select {
   right: 0px;
 }
 
-.right-8 {
-  right: 2rem;
+.right-10 {
+  right: 2.5rem;
 }
 
 .start-0 {
@@ -898,14 +898,6 @@ select {
 
 .top-20 {
   top: 5rem;
-}
-
-.top-32 {
-  top: 8rem;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .z-0 {
