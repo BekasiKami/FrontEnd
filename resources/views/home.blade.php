@@ -51,7 +51,7 @@
 
         {{-- Home Content --}}
         <main>
-            <div class="mb-4 border-b border-gray-200 mt-20 content-center mx-auto mobile:w-full sm:w-full md:w-[450px] max-mobile:w-[450px] text-sm font-medium text-center text-gray-500">
+            <div class="mb-4 border-b border-gray-200 mt-24 content-center mx-auto mobile:w-full sm:w-full md:w-[450px] max-mobile:w-[450px] text-sm font-medium text-center text-gray-500">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                     <li class="md:mx-2 mx-2" role="presentation">
                         <button class="inline-block p-4 border-b-2 rounded-t-lg" id="semua-tab" data-tabs-target="#semua" type="button" role="tab" aria-controls="semua" aria-selected="false">Semua</button>

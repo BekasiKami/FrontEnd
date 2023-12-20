@@ -38,6 +38,7 @@ Route::get('/notification', [NotificationController::class, 'notification'])->na
 Route::get('/editprofile', [EditProfileController::class, 'editprofile'])->name('editprofile');
 Route::match(['post', 'put'], '/updateProfile', [EditProfileController::class, 'updateProfile'])->name('updateProfile');
 Route::get('/changepassword', [ChangePasswordController::class, 'changepassword'])->name('changepassword');
+Route::match(['post', 'put'], '/updatePassword', [ChangePasswordController::class, 'updatePassword'])->name('updatePassword');
 //Logout clear token
 // Route::POST('logout', 'App\Http\Controllers\UserController@logout')->middleware('auth:api');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');

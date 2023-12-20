@@ -1,5 +1,5 @@
-<div class="right-0 w-[250px] flex-col justify-start items-end gap-[15px] flex absolute mr-4 -mt-10 z-0 max-tablet:invisible">
-    <p class="w-[250px] px-4 justify-start items-center gap-2.5 inline-flex text-zinc-700 text-base font-medium font-['Poppins'] leading-tight tracking-tight md:max-lg:text-sm">
+<div class="right-0 w-[250px] flex-col justify-start items-end gap-[15px] flex absolute mr-4 -mt-18 z-0 max-tablet:invisible">
+    <p class="w-[250px] pt-3 px-4 justify-start items-center gap-2.5 inline-flex text-zinc-700 text-base font-bold font-['Poppins'] leading-tight tracking-tight md:max-lg:text-sm">
       Trending hari ini
     </p>
     <div class="w-[250px] flex-col justify-start items-start flex">

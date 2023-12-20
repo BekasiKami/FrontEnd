@@ -58,20 +58,3 @@ class ProfileController extends Controller
         // return dd($userData, $postData);
     }
 }
-
-// ISI ARRAY USER
-
-// array:12 [▼ // app\Http\Controllers\ProfileController.php:40
-//   "uid" => "9edb76a8-acd8-4bfe-92f8-aa53dc2ae02b"
-//   "fullname" => "kopling"
-//   "phone" => "08888869"
-//   "image" => "avatar-default.png"
-//   "cover" => null
-//   "birthday_date" => null
-//   "created_at" => "2023-12-05T06:13:13.000Z"
-//   "username" => "testing"
-//   "description" => null
-//   "is_private" => 0
-//   "is_online" => 0
-//   "email" => "testing@gmail.com"
-// ]

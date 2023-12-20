@@ -93,8 +93,8 @@ class EditProfileController extends Controller
         $requestData = [
             'user'        => $request->input('username'),
             'fullname'    => $request->input('fullname'),
-            'description' => $request->input('description'),
-            'phone'       => $request->input('phone'),
+            'description' => 'desc',
+            'phone'       => '0000000000',
             // Add other fields as needed
         ];
 
@@ -129,4 +129,5 @@ class EditProfileController extends Controller
 
         return redirect()->route('editprofile');
     }
+
 }

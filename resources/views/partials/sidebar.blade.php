@@ -1,35 +1,36 @@
-<div class="w-[200px] h-auto flex-col justify-center items-start gap-2.5 inline-flex fixed left-[20px] top-20 max-tablet:invisible">
+<div class="w-[200px] h-auto flex-col justify-center items-start gap-2 inline-flex fixed left-[20px] top-24 max-tablet:invisible">
 
+    <div></div>
     <a href="/home"
-        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
-        <div class="w-[14px] h-[15px] relative">
+        class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
+        <div class="w-6 h-auto relative">
             <img src="assets/icons/home-icon.svg" alt="Icon Home">
         </div>
-        <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-tight">Beranda</div>
+        <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-tight">Beranda</div>
     </a>
 
     <button data-modal-target="modal-newpost" data-modal-toggle="modal-newpost"
-        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
-        <div class="w-[14px] h-[15px] relative">
+        class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
+        <div class="w-6 h-auto relative">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
         </div>
-        <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-wide">Posting</div>
+        <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Posting</div>
     </button>
 
     <a href="/trending"
-        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
-        <div class="w-[14px] h-[15px] relative">
+        class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
+        <div class="w-6 h-auto relative">
             <img src="assets/icons/chart-icon.svg" alt="Icon Trending">
         </div>
-        <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-wide">Trending</div>
+        <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Trending</div>
     </a>
 
     <a href="/profile"
-        class="self-stretch px-4 py-2 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-2.5 inline-flex">
-        <div class="w-[14px] h-[15px] relative">
+        class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
+        <div class="w-6 h-auto relative">
             <img src="assets/icons/profile-icon.svg" alt="">
         </div>
-        <div class="text-zinc-700 text-xs font-medium font-['Poppins'] leading-[18px] tracking-wide">Profile</div>
+        <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Profile</div>
     </a>
 
 </div>

@@ -20,13 +20,18 @@
                     <div class="relative">
                         
                         <input type="search" id="default-search"
-                            class="block w-[450px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
-                            placeholder="Pencarian" required>
+                            class="block w-[450px] p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                            placeholder="Cari Sesuatu Disini.." required>
                         <button type="submit"
-                            class="text-white absolute end-2.5 bottom-2 top-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2">
-                            <img class="inline-block" src="assets/images/search-icon.svg" alt="" /></button>
+                            class="text-white absolute end-2.5 bottom-2 top-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md text-sm px-4 py-2">
+                            {{-- <img class="inline-block w-6 h-auto " src="assets/images/search-icon.svg" alt="" /> --}}
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </button>
                     </div>
                 </form>
+
             </div>
 
             @include('partials.menu')
