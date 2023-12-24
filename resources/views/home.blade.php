@@ -73,7 +73,7 @@
             
             {{-- SEMUA --}}
             <div id="default-tab-content">
-                <div class="hidden p-4 rounded-lg" id="semua" role="tabpanel" aria-labelledby="semua-tab">
+                <div class="hidden rounded-lg" id="semua" role="tabpanel" aria-labelledby="semua-tab">
                     <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
                         <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                             <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
@@ -166,7 +166,7 @@
                 </div>
 
                 {{-- LOKER --}}
-                <div class="hidden p-4 rounded-lg" id="loker" role="tabpanel" aria-labelledby="loker-tab">
+                <div class="hidden rounded-lg" id="loker" role="tabpanel" aria-labelledby="loker-tab">
                     <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
                         <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                             <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
@@ -259,7 +259,7 @@
                 </div>
                 
                 {{-- EVENT --}}
-                <div class="hidden p-4 rounded-lg" id="event" role="tabpanel" aria-labelledby="event-tab">
+                <div class="hidden rounded-lg" id="event" role="tabpanel" aria-labelledby="event-tab">
                     <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
                         <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                             <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
@@ -351,7 +351,7 @@
                 </div>
 
                 {{-- WISATA --}}
-                <div class="hidden p-4 rounded-lg" id="wisata" role="tabpanel" aria-labelledby="wisata-tab">
+                <div class="hidden rounded-lg" id="wisata" role="tabpanel" aria-labelledby="wisata-tab">
                     <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
                         <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                             <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
@@ -442,7 +442,7 @@
                 </div>
 
                 {{-- KULINER --}}
-                <div class="hidden p-4 rounded-lg" id="kuliner" role="tabpanel" aria-labelledby="kuliner-tab">
+                <div class="hidden rounded-lg" id="kuliner" role="tabpanel" aria-labelledby="kuliner-tab">
                     <div class="container mx-auto md:w-[450px] max-mobile:w-[450px] mobile:w-full">
                         <section class="md:w-[450px] max-mobile:w-[450px] mobile:w-full mx-auto">
                             <div class="grid grid-rows-[0.5fr_3fr] gap-[15px] mx-0 mt-[10px] py-[1.2rem]">
