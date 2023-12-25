@@ -30,6 +30,12 @@ Route::get('view/detail/users', [HomeController::class, 'index'])->name('view/de
 // Login API
 Route::get('loginn', [LoginController::class, 'login'])->name('loginn');
 Route::post('loginApi', [LoginController::class, 'loginApi'])->name('loginApi');
+
+// Route::get('/register', function () {
+//     return view('register');
+// });
+Route::get('register', [UserController::class, 'register'])->name('register');
+Route::post('regisAPI', [UserController::class, 'regisAPI'])->name('regisAPI');
 // Contoh memberikan nama route
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
@@ -156,13 +162,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
 
-Route::get('/register2', function () {
-    return view('register2');
-});
+
+// Route::get('/register2', function () {
+//     return view('register2');
+// });
 
 // Route::get('/trending', function () {
 //     return view('trending', [

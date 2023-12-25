@@ -3,8 +3,12 @@
     class="hidden fixed top-0 left-0 z-40 w-screen h-screen bg-black/70 flex justify-center items-center">
 
     <!-- The close button -->
-    <a class="fixed z-50 top-20 right-10 text-white text-5xl font-bold" href="javascript:void(0)"
-        onclick="closeModal()">&times;</a>
+    <a class="fixed z-50 top-20 right-10 text-white text-5xl font-bold" href="javascript:void(0)" onclick="closeModal()">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+    </a>
 
     <!-- A big image will be displayed here -->
     <div class="bg-white w-min max-w-[1250px] h-auto max-h-[800px] inline-flex" id="posting">

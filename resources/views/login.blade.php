@@ -110,23 +110,25 @@
 
         <form action="{{ route('loginApi') }}" method="POST" enctype="application/x-www-form-urlencoded">
             @csrf
-            <div class="mb-3">
-                <input type="text" name="email" id="email" autocomplete="email"
-                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Email" required="">
+            <div class="mb-5">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+                <input type="email" id="email" name="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Masukan Email Kamu" required>
             </div>
-
-            <div class="mb-3">
-                <input type="password" name="password" id="password" autocomplete="password"
-                    class="w-full h-10 px-3 bg-neutral-200 rounded-md shadow mb-2" placeholder="Password" required="">
+            <div class="mb-5">
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Kata Sandi</label>
+                <input type="password" id="password" name="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Masukan Kata Sandi" required>
             </div>
-
             <button
                 class="w-full h-10 bg-emerald-500 rounded-md shadow text-white text-sm font-normal leading-[18px] hover:bg-red-500 flex items-center justify-center"
                 type="submit" value="submit">Masuk</button>
         </form>
 
         <div class="flex justify-center">
-            <div class="py-2.5 justify-center items-center gap-5 inline-flex">
+            <div class="py-5 justify-center items-center gap-5 inline-flex">
                 <div class="w-[120px] h-[0px] border-b border-zinc-800"></div>
                 <div class="text-zinc-800 text-sm font-normal lowercase leading-[18px] tracking-tight">atau</div>
                 <div class="w-[120px] h-[0px] border-b border-zinc-800"></div>
@@ -148,27 +150,27 @@
             <div class="w-5 h-5"></div>
         </button>
 
-        <div class="w-full justify-end items-center pt-5 inline-flex">
+        {{-- <div class="w-full justify-end items-center pt-5 inline-flex">
             <a href="#"
                 class="text-emerald-500 text-sm font-normal capitalize leading-[18px] tracking-tight hover:text-emerald-600">Lupa
                 Password?</a>
-        </div>
+        </div> --}}
 
-        <div class="justify-center items-center py-5 inline-flex">
+        {{-- <div class="justify-center items-center py-5 inline-flex">
             <div class="text-justify"><span class="text-stone-900 text-sm font-normal leading-[15px]">Dengan masuk ke
                     aplikasi BAKA, kamu menyetujui segala </span><span
                     class="text-emerald-500 text-sm font-bold underline leading-[15px]">Syarat dan
                     Ketentuan</span><span class="text-stone-900 text-sm font-normal leading-[15px]"> dan </span><span
                     class="text-emerald-500 text-sm font-bold underline leading-[15px]">Kebijakan Privasi
                     BAKA</span><span style="text-stone-900 text-xs font-normal leading-[15px]">.</span></div>
-        </div>
+        </div> --}}
 
-        <div class="justify-center items-center gap-2.5 flex mx-auto">
+        <div class="justify-center items-center gap-2.5 flex mx-auto py-5">
             <div class="mx-auto">
-                <span class="text-stone-900 text-md font-normal capitalize leading-normal tracking-tight">Belum Punya
+                <span class="text-stone-900 text-sm font-normal capitalize leading-normal tracking-tight">Belum Punya
                     Akun? </span>
                 <a href="/register"
-                    class="text-emerald-500 text-md font-bold capitalize leading-normal tracking-tight hover:text-emerald-600">Daftar
+                    class="text-emerald-500 text-sm font-bold capitalize leading-normal tracking-tight hover:text-emerald-600">Daftar
                     Sekarang</a>
             </div>
         </div>

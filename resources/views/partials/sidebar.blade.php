@@ -3,7 +3,7 @@
     <div></div>
     <a href="/home"
         class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
-        <div class="w-6 h-auto relative">
+        <div class="w-4 h-auto relative">
             <img src="assets/icons/home-icon.svg" alt="Icon Home">
         </div>
         <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-tight">Beranda</div>
@@ -11,7 +11,7 @@
 
     <button data-modal-target="modal-newpost" data-modal-toggle="modal-newpost"
         class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
-        <div class="w-6 h-auto relative">
+        <div class="w-4 h-auto relative">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
         </div>
         <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Posting</div>
@@ -19,7 +19,7 @@
 
     <a href="/trending"
         class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
-        <div class="w-6 h-auto relative">
+        <div class="w-4 h-auto relative">
             <img src="assets/icons/chart-icon.svg" alt="Icon Trending">
         </div>
         <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Trending</div>
@@ -27,7 +27,7 @@
 
     <a href="/profile"
         class="self-stretch px-3 py-3 hover:bg-zinc-100 rounded-[7px] justify-start items-center gap-4 inline-flex">
-        <div class="w-6 h-auto relative">
+        <div class="w-4 h-auto relative">
             <img src="assets/icons/profile-icon.svg" alt="">
         </div>
         <div class="text-zinc-700 text-md font-medium leading-[18px] tracking-wide">Profile</div>
@@ -40,32 +40,6 @@
 {{-- RESPONSIVE MOBILE --}}
 <div
     class="fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 min-desktop:invisible max-mobile:fixed">
-
-    {{-- <div class="w-full">
-        <div class="grid max-w-sm grid-cols-5 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600"
-            role="group">
-            <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-white bg-gray-900 dark:bg-gray-300 dark:text-gray-900 rounded-lg">
-                Semua
-            </button>
-            <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                Loker
-            </button>
-            <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                Event
-            </button>
-            <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                Wisata
-            </button>
-            <button type="button"
-                class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                Kuliner
-            </button>
-        </div>
-    </div> --}}
 
     {{-- ICON NAVBAR --}}
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
@@ -95,7 +69,7 @@
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
 
-        <button data-modal-target="modal-newpost" data-modal-toggle="modal-posting" data-tooltip-target="tooltip-post" type="button"
+        <button data-modal-target="modal-newpost" data-modal-toggle="modal-newpost" data-tooltip-target="tooltip-post" type="button"
             class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <img src="assets/icons/post-icon.svg" alt="Icon Posting">
             <span class="sr-only">New post</span>
